@@ -1,0 +1,28 @@
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+.header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../Assets/img/hero-L.jpg);
+  background-position: top right;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 95vh;
+  overflow: hidden;
+  
+
+  &-text {
+    padding: 4rem;
+    animation-duration: 0.5s;
+    animation-name: animate-pop;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+  }
+}

@@ -1,0 +1,41 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.modal {
+  position: fixed;
+  top: 15%;
+  left: 10%;
+  width: 80vw;
+  overflow: scroll;
+  border-radius: 1.4rem;
+  z-index: 300;
+  animation: slide-down 300ms ease-out forwards;
+}
+
+.modal::-webkit-scrollbar{
+  scrollbar-width: 1px;
+  scrollbar-color: red;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

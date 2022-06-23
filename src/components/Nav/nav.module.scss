@@ -1,0 +1,28 @@
+.navigation {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: #f1f1f180;
+  backdrop-filter: saturate(120%) blur(10px);
+}
+
+.logo{
+    font-size: 4rem;
+}
+
+.list {
+  &-link {
+    cursor: pointer;
+    padding: 1rem 2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: currentColor;
+    transition: all .5s ease-in;
+
+    &:hover {
+       text-decoration: underline;
+       background-color: #fff;
+    }
+  }
+}

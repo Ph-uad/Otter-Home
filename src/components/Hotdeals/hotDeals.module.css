@@ -1,0 +1,19 @@
+.hot {
+  gap: 0;
+  align-items: stretch;
+}
+.hot-details {
+  flex: 1 1 50%;
+  background-color: var(--color-black);
+  padding: 2rem;
+  color: var(--color-contrast);
+}
+.hot-details > * span > * {
+  fill: #fff;
+}
+
+.poster {
+  flex: 1 1 50%;
+  aspect-ratio: 1;
+  background: url(../../Assets/img/hotDeals.jpg) top center/cover;
+}/*# sourceMappingURL=hotDeals.module.css.map */

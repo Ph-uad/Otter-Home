@@ -1,0 +1,26 @@
+.apartment-container {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  background: #fff;
+  opacity: 1;
+}
+@media (min-width: 57em) {
+  .apartment-container {
+    flex-direction: row;
+  }
+}
+.apartment-box {
+  flex: 0 1 50%;
+}
+.apartment-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.apartment-details {
+  flex: 0 1 50%;
+  padding: 2rem 4rem;
+}/*# sourceMappingURL=apartmentInfo.module.css.map */
