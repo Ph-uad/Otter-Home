@@ -4,8 +4,8 @@ import ApartmentCard from './ApartmentCards';
 const Apartment = () => {
     return (
         <section>
-            <h4 className="heading-quadruple">Otter Agency</h4>
-            <h2 className=" heading-secondary"><span className="bolder">Feautured</span> Properties.</h2>
+            <h4 className="heading-quadruple">best deals</h4>
+            <h2 className=" heading-secondary bolder">Your Plan </h2>
             <ApartmentCard/>         
         </section>
     )

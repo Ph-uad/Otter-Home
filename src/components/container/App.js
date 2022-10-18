@@ -1,10 +1,11 @@
 import React from 'react';
-import Nav from '../Nav/Nav';
-import Header from '../Header/Header';
+// import Nav from '../nav/Nav';
+import Header from '../header/Header';
 import Apartment from '../apartment/Apartment';
-import HotDeals from '../Hotdeals/HotDeals';
-import Categories from '../Categories/Categories';
-import Footer from '../Footer/Footer';
+// import HotDeals from '../hotdeals/HotDeals';
+// import Categories from '../categories/Categories';
+// import Aboutus from '../aboutus/Aboutus';
+import Footer from '../footer/Footer';
 import './App.css'
 
 
@@ -12,15 +13,14 @@ function App() {
 
   return (
     <div className="App">
-
-      <Header/>
-      <Nav></Nav>
-        <div className="fluid-container" id='apartment'>
-        <Apartment/>
-        <HotDeals />
-        <Categories />
-        </div>
-      <Footer></Footer>
+      <Header />
+      <div className="fluid-container" id='apartment'>
+        <Apartment />
+        {/* <HotDeals /> */}
+        {/* <Categories /> */}
+        {/* <Aboutus /> */}
+      </div>
+      <Footer/>
     </div>
   );
 }

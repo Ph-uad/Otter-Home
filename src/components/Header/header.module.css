@@ -19,21 +19,27 @@
   }
 }
 .header {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../Assets/img/hero-L.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7411764706), rgba(0, 0, 0, 0.7411764706)), url(../../Assets/img/hero.jpg);
   background-position: top right;
   background-size: cover;
   background-attachment: fixed;
-  height: 95vh;
-  overflow: hidden;
+  height: 100vh;
+}
+.header__container {
+  align-self: end;
+  width: 60%;
+  padding: 4rem;
 }
 .header-text {
-  padding: 4rem;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-name: animate-pop;
-          animation-name: animate-pop;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  -webkit-animation: animate-pop 0.5s ease-in-out 0.2s forwards;
+          animation: animate-pop 0.5s ease-in-out 0.2s forwards;
+}
+@media (min-width: 40em) {
+  .header-text {
+    flex: 0 1 65%;
+  }
+}
+.header__option {
+  margin-top: 20rem;
+  flex-wrap: nowrap;
 }/*# sourceMappingURL=header.module.css.map */

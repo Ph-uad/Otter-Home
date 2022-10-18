@@ -86,17 +86,7 @@ body::-webkit-scrollbar {
   display: inline;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-@media (max-width: 56.25em) {
-  .flex {
-    gap: .5rem;
-  }
-}
+
 
 .center {
   margin: 0 auto;
@@ -105,8 +95,11 @@ body::-webkit-scrollbar {
 /*  */
 
 /* typography */
+h1,h2,h3,h4,h5{
+  font-family:sans-serif;
+}
 .heading-jumbo {
-  font-size: 8rem;
+  font-size: 5.4rem;
   text-transform: uppercase;
 }
 .heading-primary {
@@ -171,34 +164,65 @@ li {
   }
 }
 
+/* Flex */
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-right,.flex-left{
+  flex:  0 1 46%;
+  padding: 4rem;
+}
+.flex-left{
+  order: -3;
+}
+
+@media (max-width: 56.25em) {
+  .flex {
+    gap: .5rem;
+  }
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
+/*  */
+
 .property-details{
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  padding: 0;
+  position: relative;
+  left: 0;
 }
 
 .svg-text {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
 .svg {
-  height: 3rem;
-  width: 3rem;
+  height: 2rem;
+  width: 2rem;
   margin-right: .4rem;
   fill: var(--color-black);
 }
 
 .svg-container{
-  padding: 1rem;
+  padding: .5rem;
   gap: 0;
   justify-content: center !important;
-  border: 1px solid var(--color-gray) ;
+}
+
+.svg-container:not(:last-of-type){
+border-right: 1px solid var(--color-black);
 }
 
 
@@ -208,6 +232,7 @@ section {
 
 .grid {
   display: grid;
+  gap:1rem;
 }
 
 .box {
@@ -236,7 +261,6 @@ section {
   width: 100%;
   padding: 4rem 25%;
   font-size: 2rem;
-  background-color: var(--color-primary);
   margin-bottom: 1rem;
 }
 
@@ -248,3 +272,29 @@ section {
   text-transform: capitalize;
 }
 
+.img{
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+
+  transition: transform .3s ease-in-out;
+}
+
+.img:hover{
+  transform: scale(1.1);
+}
+
+.circle{
+  width: 20rem;
+  clip-path: circle(45% at 50%);
+}
+
+.focal-text{
+  color:var(--color-primary__light);
+  text-decoration: underline;
+}
+
+.pill{
+  border-radius: 100px !important;
+}

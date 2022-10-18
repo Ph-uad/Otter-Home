@@ -1,10 +1,12 @@
-.navigation {
+.nav {
   position: sticky;
   top: 0;
   z-index: 100;
   width: 100%;
-  background-color: #f1f1f180;
+  background-color: #f1f1f14e;
   backdrop-filter: saturate(120%) blur(10px);
+  cursor: pointer;
+  padding:0 4rem;
 }
 
 .logo{
@@ -14,7 +16,7 @@
 .list {
   &-link {
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: 2rem;
     text-transform: capitalize;
     text-decoration: none;
     color: currentColor;
@@ -22,7 +24,6 @@
 
     &:hover {
        text-decoration: underline;
-       background-color: #fff;
     }
   }
 }

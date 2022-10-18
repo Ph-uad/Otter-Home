@@ -4,8 +4,8 @@
   border-radius: 4px;
   background-color: var(--color-primary);
   border: none;
-  font-size: 1.8rem;
-  padding: 1.6rem;
+  font-size: 2rem;
+  padding: 1.3rem 1.6rem;
   transition: all 0.5s;
   cursor: pointer;
   margin: 0.5rem 0;

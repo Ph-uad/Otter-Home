@@ -1,0 +1,15 @@
+.aboutus{
+    &-container{
+        align-items: flex-end;
+    }
+
+    &-gallery{
+        position: relative;
+        width: 20rem;
+        aspect-ratio: 1/1.2;
+    }
+
+    &-text{
+        padding:10rem 5% ;
+    }
+}

@@ -11,19 +11,19 @@ const Categories = () => {
             <h2 className=" heading-secondary"><span className="bolder">Pick</span> your neigbourhood <span className="bolder">of choice.</span></h2>
             <div className={`flex text-white ${classes["category-container"]}`}>
                 <div className={classes["category-portal"]} style={{background : `linear-gradient(#1d1d1d20, #f1f1f115), url(${Complex})`}}>
-                    <img className={classes['category-portal__image']} src={Complex} alt="" srcset="" />
-                    <label className={classes['category-portal__label']}>Apartment Complex</label>
+                    <img className={classes['category-portal__image']} src={Complex} alt="property-types"  />
+                    <label className={classes['category-portal__label']}>Apartment</label>
                 </div>
                 <div className={classes["category-portal"]}>
-                    <img className={classes['category-portal__image']} src={Residential} alt="" srcset="" />
+                    <img className={classes['category-portal__image']} src={Residential} alt="property-types"  />
                     <label className={classes['category-portal__label']}>Residential</label>
                 </div>
                 <div className={classes["category-portal"]}>
-                    <img className={classes['category-portal__image']} src={Natural} alt="" srcset="" />
+                    <img className={classes['category-portal__image']} src={Natural} alt="property-types"  />
                     <label className={classes['category-portal__label']}>Nature</label>
                 </div>
                 <div className={classes["category-portal"]}>
-                    <img className={classes['category-portal__image']} src={Loft} alt="" srcset="" />
+                    <img className={classes['category-portal__image']} src={Loft} alt="property-types"  />
                     <label className={classes['category-portal__label']}>Loft</label>
                 </div>
             </div>

@@ -1,0 +1,11 @@
+.aboutus-container {
+  align-items: flex-end;
+}
+.aboutus-gallery {
+  position: relative;
+  width: 20rem;
+  aspect-ratio: 1/1.2;
+}
+.aboutus-text {
+  padding: 10rem 5%;
+}/*# sourceMappingURL=aboutus.module.css.map */

@@ -10,19 +10,32 @@
 }
 
 .header {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../Assets/img/hero-L.jpg);
+  background: linear-gradient(0deg, #000000bd, #000000bd),url(../../Assets/img/hero.jpg);
   background-position: top right;
   background-size: cover;
   background-attachment: fixed;
-  height: 95vh;
-  overflow: hidden;
-  
+  height:100vh;
+
+  &__container{
+    align-self: end;
+    width: 60%;
+
+    padding: 4rem;
+  }
 
   &-text {
-    padding: 4rem;
-    animation-duration: 0.5s;
-    animation-name: animate-pop;
-    animation-delay: 0.5s;
-    animation-fill-mode: backwards;
+
+    animation: animate-pop .5s ease-in-out .2s forwards;
+
+    @media (min-width:40em) {
+      &{
+        flex: 0 1 65%;
+      }
+    }
+  }
+
+  &__option{
+    margin-top: 20rem;
+    flex-wrap: nowrap;
   }
 }
