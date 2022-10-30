@@ -12,106 +12,144 @@ const propertyList = [
     {
         "location": "Omole",
         "town": "Ikeja",
-        "price": "₦20000",
-        "image": Image5,
+        "image": Image,
+        bathroom: 3,
+        rooms: 4,
+        landSize : "620m2 land area", 
+        garage: 3,
         description: `
-                   this is supposed to be a description to this building. I won't write unique fictional adjectives. I am not J.K Rowling. I'm just rowling. Sounds like a bot joke. but. This is enough. `,
+                   Designed by AO Architecture and built by the developers company J & S Build - The two incredibly reputable companies behind the project. This will give you confidence in the finished product and the realistic time frames provided with construction set to begin Q4 2022 and for completion which is the end of Q2 2023. `,
     },
     {
         "location": "Wempco",
         "town": "Ikeja",
-        "price": "₦19,000",
         "image": Image2,
+        bathroom: 3,
+        rooms: 4,
+        landSize : "620m2 land area", 
+        garage: 3,
         description: `
-                   this is supposed to be a description to this building. I won't write unique fictional adjectives. I am not J.K Rowling. I'm just rowling. Sounds like a bot joke. but. This is enough. `,
+                   Designed by AO Architecture and built by the developers company J & S Build - The two incredibly reputable companies behind the project. This will give you confidence in the finished product and the realistic time frames provided with construction set to begin Q4 2022 and for completion which is the end of Q2 2023. `,
     },
     {
         "location": "Akninkunmi",
         "town": "Yaba",
-        "price": "₦12,000",
         "image": Image3,
+        bathroom: 3,
+        rooms: 4,
+        landSize : "620m2 land area", 
+        garage: 3,
         description: `
-                   this is supposed to be a description to this building. I won't write unique fictional adjectives. I am not J.K Rowling. I'm just rowling. Sounds like a bot joke. but. This is enough. `,
+                   Designed by AO Architecture and built by the developers company J & S Build - The two incredibly reputable companies behind the project. This will give you confidence in the finished product and the realistic time frames provided with construction set to begin Q4 2022 and for completion which is the end of Q2 2023. `,
     },
     {
         "location": "Tejuosho",
         "town": "Surulere",
-        "price": "₦20,000",
         "image": Image1,
+        bathroom: 3,
+        rooms: 4,
+        landSize : "620m2 land area", 
+        garage: 3,
         description: `
-                   this is supposed to be a description to this building. I won't write unique fictional adjectives. I am not J.K Rowling. I'm just rowling. Sounds like a bot joke. but. This is enough. `,
+                   Designed by AO Architecture and built by the developers company J & S Build - The two incredibly reputable companies behind the project. This will give you confidence in the finished product and the realistic time frames provided with construction set to begin Q4 2022 and for completion which is the end of Q2 2023. `,
     },
     {
         "location": "Pamilerin",
         "town": "Ketu",
-        "price": "₦20,000",
         "image": Image6,
+        bathroom: 3,
+        rooms: 4,
+        landSize : "620m2 land area", 
+        garage: 3,
         description: `
-                   this is supposed to be a description to this building. I won't write unique fictional adjectives. I am not J.K Rowling. I'm just rowling. Sounds like a bot joke. but. This is enough. `,
+                   Designed by AO Architecture and built by the developers company J & S Build - The two incredibly reputable companies behind the project. This will give you confidence in the finished product and the realistic time frames provided with construction set to begin Q4 2022 and for completion which is the end of Q2 2023. `,
     },
     {
         "location": "Fortune's estate",
         "town": "Lekki",
-        "price": "₦20,000",
         "image": Image4,
+        bathroom: 3,
+        rooms: 4,
+        landSize : "620m2 land area", 
+        garage: 3,
         description: `
-                   this is supposed to be a description to this building. I won't write unique fictional adjectives. I am not J.K Rowling. I'm just rowling. Sounds like a bot joke. but. This is enough. `,
+                   Designed by AO Architecture and built by the developers company J & S Build - The two incredibly reputable companies behind the project. This will give you confidence in the finished product and the realistic time frames provided with construction set to begin Q4 2022 and for completion which is the end of Q2 2023. `,
     },
     {
         "location": "Ikeja",
         "town": "Ikeja",
-        "price": "₦20,000",
         "image": Image,
+        bathroom: 3,
+        rooms: 4,
+        landSize : "620m2 land area", 
+        garage: 3,
         description: `
-                   this is supposed to be a description to this building. I won't write unique fictional adjectives. I am not J.K Rowling. I'm just rowling. Sounds like a bot joke. but. This is enough. "    `,
+                   Designed by AO Architecture and built by the developers company J & S Build - The two incredibly reputable companies behind the project. This will give you confidence in the finished product and the realistic time frames provided with construction set to begin Q4 2022 and for completion which is the end of Q2 2023. "    `,
     },
     {
         "location": "Ikeja",
         "town": "Badagry",
-        "price": "₦20,000",
         "image": Image5,
+        bathroom: 3,
+        rooms: 4,
+        landSize : "620m2 land area", 
+        garage: 3,
         description: `
-                   this is supposed to be a description to this building. I won't write unique fictional adjectives. I am not J.K Rowling. I'm just rowling. Sounds like a bot joke. but. This is enough. `,
+                   Designed by AO Architecture and built by the developers company J & S Build - The two incredibly reputable companies behind the project. This will give you confidence in the finished product and the realistic time frames provided with construction set to begin Q4 2022 and for completion which is the end of Q2 2023. `,
     },
     {
         "location": "Ikeja",
         "town": "Ifako",
-        "price": "₦20,000",
         "image": Image2,
+        bathroom: 3,
+        rooms: 4,
+        landSize : "620m2 land area", 
+        garage: 3,
         description: `
-                   this is supposed to be a description to this building. I won't write unique fictional adjectives. I am not J.K Rowling. I'm just rowling. Sounds like a bot joke. but. This is enough. `,
+                   Designed by AO Architecture and built by the developers company J & S Build - The two incredibly reputable companies behind the project. This will give you confidence in the finished product and the realistic time frames provided with construction set to begin Q4 2022 and for completion which is the end of Q2 2023. `,
     },
     {
         "location": "Ikeja",
         "town": "Ifako",
-        "price": "₦20,000",
         "image": Image4,
+        bathroom: 3,
+        rooms: 4,
+        landSize : "620m2 land area", 
+        garage: 3,
         description: `
-                   this is supposed to be a description to this building. I won't write unique fictional adjectives. I am not J.K Rowling. I'm just rowling. Sounds like a bot joke. but. This is enough. `,
+                   Designed by AO Architecture and built by the developers company J & S Build - The two incredibly reputable companies behind the project. This will give you confidence in the finished product and the realistic time frames provided with construction set to begin Q4 2022 and for completion which is the end of Q2 2023. `,
     },
     {
         "location": "Ikeja",
         "town": "Ifako",
-        "price": "₦20,000",
         "image": Image3,
+        bathroom: 3,
+        rooms: 4,
+        landSize : "620m2 land area", 
+        garage: 3,
         description: `
-                   this is supposed to be a description to this building. I won't write unique fictional adjectives. I am not J.K Rowling. I'm just rowling. Sounds like a bot joke. but. This is enough. `,
+                   Designed by AO Architecture and built by the developers company J & S Build - The two incredibly reputable companies behind the project. This will give you confidence in the finished product and the realistic time frames provided with construction set to begin Q4 2022 and for completion which is the end of Q2 2023. `,
     },
     {
         "location": "Ikeja",
         "town": "Ifako",
-        "price": "₦20,000",
         "image": Image2,
+        bathroom: 3,
+        rooms: 4,
+        landSize : "620m2 land area", 
+        garage: 3,
         description: `
-                   this is supposed to be a description to this building. I won't write unique fictional adjectives. I am not J.K Rowling. I'm just rowling. Sounds like a bot joke. but. This is enough.`, 
+                   Designed by AO Architecture and built by the developers company J & S Build - The two incredibly reputable companies behind the project. This will give you confidence in the finished product and the realistic time frames provided with construction set to begin Q4 2022 and for completion which is the end of Q2 2023.`, 
     }
 ]
 
 const propertySlice = createSlice({
-    name : 'properties',
+    name : 'Property',
     initialState : propertyList,
-    reducers: { }
+    reducers : {}
 })
+
+
 
 const store  = configureStore({reducer : {property: propertySlice.reducer}});
 

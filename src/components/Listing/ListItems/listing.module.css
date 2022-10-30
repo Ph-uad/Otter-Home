@@ -1,0 +1,61 @@
+.figure {
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.flex {
+    justify-content: flex-start;
+    gap: .5rem;
+}
+
+.icon__frame {
+    padding: .2rem;
+    border: 1px solid #333;
+    width: fit-content;
+    display: flex;
+    border-radius: 5px;
+    margin: .2rem 0;
+}
+
+.modal__container {
+    padding: 6rem 10rem;
+}
+
+.modal__figure {
+    overflow: hidden;
+    flex: 0 1 45%;
+    border-radius: .5rem;
+    aspect-ratio: 1/1.1;
+}
+
+
+.modal__details {
+    flex: 0 1 45%;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.close {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.close:hover {
+    opacity: .6;
+}
+
+/* .icon{
+    width: 10%;
+    height: 10%;
+    display: flex;
+} */

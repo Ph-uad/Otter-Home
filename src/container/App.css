@@ -1,0 +1,17 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+}
+
+.btn{
+    padding: 1rem 1.5rem;
+    border: transparent;
+    background: inherit;
+    cursor: pointer;
+}
+
+.btn--tertiary{
+    border: 1px solid var(  --color-black);
+}
+

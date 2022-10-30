@@ -9,6 +9,7 @@
           backdrop-filter: saturate(120%) blur(10px);
   cursor: pointer;
   padding: 0 4rem;
+  justify-content: space-between;
 }
 
 .logo {

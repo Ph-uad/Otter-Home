@@ -2,16 +2,25 @@
   width:  100%;
   overflow: scroll;
 }
+.heading, .nav{
+ width: 80%;
+ margin: 5rem auto;
+}
 
 .card{
   width: 290vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   overflow: hidden;
+  position: relative;
+}
+
+.module{
+  width: 90vw;
 }
 
 .figure {
-  flex: 0 1 45%;
+  flex: 0 1 60%;
   aspect-ratio: 1/0.6;
   content-visibility: auto;
 }
@@ -24,7 +33,7 @@
 }
 
 .details {
-  flex: 0 1 45%;
+  flex: 0 1 35%;
 }
 
 .btn{

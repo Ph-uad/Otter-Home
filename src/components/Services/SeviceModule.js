@@ -2,9 +2,8 @@ import Classes from './apartment.module.css';
 
 
 const Module = ({data}) => {
-    console.log(data)
+
     return (
-        // <div className={`  ${Classes["container"]}`}>
         <div className={`mod flex ${Classes.module}`}>
             <figure className={Classes.figure}>
                 <img src={data.img} className={Classes['image']} alt="house"></img>
