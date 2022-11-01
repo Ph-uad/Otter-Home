@@ -10,10 +10,9 @@
 
 .modal {
   position: fixed;
-  top: 1%;
-  left: 1%;
-  width: calc(100vw - 2%);
-  height: calc(100vh - 2%);
+  top: 5%;
+  left: 5%;
+  width: calc(100vw - 10%);
   overflow-y: auto;
   z-index: 300;
   animation: slide-down 300ms ease-out forwards;

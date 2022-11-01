@@ -9,6 +9,12 @@
     border: transparent;
     background: inherit;
     cursor: pointer;
+    text-transform:capitalize;
+}
+
+.btn--secondary{
+    background: var(  --color-primary);
+    color: var(--color-white);
 }
 
 .btn--tertiary{

@@ -10,7 +10,7 @@ const Homepage = () => {
     return (
         <>
             <Header />
-            <Nav />
+            <Nav/>
             <Service />
             <div className="fluid-container" id='apartment'>
                 <Listing />

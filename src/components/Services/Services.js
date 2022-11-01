@@ -1,5 +1,5 @@
 import Module from './SeviceModule';
-import Classes from './apartment.module.css';
+import Classes from './services.module.css';
 import Family from '../../Assets/img/plan__family.jpg'
 import Office from '../../Assets/img/plan__office.jpg'
 import Vacation from '../../Assets/img/plan__vacation.jpg'

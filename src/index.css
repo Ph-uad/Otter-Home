@@ -188,8 +188,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
-  gap: 5rem;
+justify-content: space-between;
 }
 
 .flex-right,

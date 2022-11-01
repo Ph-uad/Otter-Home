@@ -1,4 +1,4 @@
-import Classes from './apartment.module.css';
+import Classes from './services.module.css';
 
 
 const Module = ({data}) => {
