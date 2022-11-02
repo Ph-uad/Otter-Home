@@ -1,23 +1,39 @@
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
 }
 
-.btn{
+.btn {
+    display: block;
     padding: 1rem 1.5rem;
     border: transparent;
     background: inherit;
     cursor: pointer;
-    text-transform:capitalize;
+    text-transform: capitalize;
+    margin: 10rem auto;
 }
 
-.btn--secondary{
-    background: var(  --color-primary);
+*{
+    transition: .4s ease-in-out;
+}
+
+.btn:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 4px #333;
+}
+
+.btn--primary {
+    background: var(--color-primary);
     color: var(--color-white);
 }
 
-.btn--tertiary{
-    border: 1px solid var(  --color-black);
+
+.btn--secondary {
+    background: var(--color-secondary);
+    color: var(--color-white);
 }
 
+.btn--tertiary {
+    border: 1px solid var(--color-black);
+}

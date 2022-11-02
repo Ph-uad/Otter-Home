@@ -1,8 +1,8 @@
 
-import Listing from '../components/Listing/Listing'
+import Listing from './Listing'
 import Nav from '../components/nav/Nav';
 import Header from '../components/header/Header';
-import Service from '../components/Services/Services';
+import Service from '../components/Plan/Services';
 import Footer from '../components/footer/Footer';
 
 const Homepage = () => {
@@ -10,7 +10,7 @@ const Homepage = () => {
     return (
         <>
             <Header />
-            <Nav/>
+            <Nav />
             <Service />
             <div className="fluid-container" id='apartment'>
                 <Listing />

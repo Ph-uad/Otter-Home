@@ -142,18 +142,23 @@ const propertyList = [
                    Designed by AO Architecture and built by the developers company J & S Build - The two incredibly reputable companies behind the project. This will give you confidence in the finished product and the realistic time frames provided with construction set to begin Q4 2022 and for completion which is the end of Q2 2023.`, 
     }
 ]
-
+ 
 const propertySlice = createSlice({
     name : 'Property',
     initialState : propertyList,
-    reducers : {}
+    reducers : {
+        check: ()=>{
+                console.log("wewe")
+        },
+        replaceCart(state, action) {
+            state.totalQuantity = action.payload.totalQuantity;
+            state.items = action.payload.items;
+          },
+    }
 })
-
 
 
 const store  = configureStore({reducer : {property: propertySlice.reducer}});
 
-
-
-export const propertyActions = propertySlice.actions;
+export const propActions = propertySlice.actions;
 export default store;

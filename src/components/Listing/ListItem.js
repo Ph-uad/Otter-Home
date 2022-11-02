@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import Classes from './listing.module.css';
-import ListModal from '../ListingModal'
+import ListModal from './ListingModal'
 
 
 const ListItems = () => {
@@ -39,7 +39,6 @@ const ListItems = () => {
                         <p className="paragraph">grg: { item.garage }</p>
                     </div>
                 </div>
-
             </li>
         )
     })
@@ -47,7 +46,7 @@ const ListItems = () => {
     return (
         <div className="grid">
             { lists }
-            { modal && <ListModal data={modal} close={closeModalHandler}/> }
+            { modal && <ListModal data={ modal } close={ closeModalHandler } /> }
         </div>
     )
 
