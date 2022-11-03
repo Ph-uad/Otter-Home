@@ -1,10 +1,10 @@
 
 import Classes from './header.module.css';
-import OptionBox from '../UI/optionBox/optionBox';
-import Loft from '../../Assets/img/loft.jpg';
-import Complex from '../../Assets/img/complex.jpg';
-import Residential from '../../Assets/img/residential.jpg';
-import Commercial from '../../Assets/img/commercial.jpg';
+import OptionBox from '../ui/optionBox/optionBox';
+import Loft from '../../assets/img/loft.jpg';
+import Complex from '../../assets/img/complex.jpg';
+import Residential from '../../assets/img/residential.jpg';
+import Commercial from '../../assets/img/commercial.jpg';
 
 const Header = (props) => {
 

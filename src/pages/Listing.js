@@ -1,5 +1,5 @@
-import ListItems from "../components/Listing/ListItem";
-import Classes from '../components/Listing/listing.module.css';
+import ListItems from "../components/listing/ListItem";
+import Classes from '../components/listing/listing.module.css';
 
 const Listing = () => {
 
@@ -10,7 +10,7 @@ const Listing = () => {
                 <h2 className=" heading-secondary bolder">Current Listing</h2>
                 <div className={ Classes }>
                 </div>
-                <ListItems />
+                <ListItems count={8} />
             </section>
         </>
 

@@ -1,0 +1,15 @@
+.header{
+    height: 80vh;
+    width: 100vw;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.figure{
+    margin-top: 4rem;
+    width: 45rem;
+    aspect-ratio: 1;
+    clip-path: circle(40% at 50% 39%);
+}

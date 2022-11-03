@@ -9,7 +9,7 @@
   }
 }
 .header {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7411764706), rgba(0, 0, 0, 0.7411764706)), url(../../Assets/img/hero.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7411764706), rgba(0, 0, 0, 0.7411764706)), url(../../assets/img/hero.jpg);
   background-position: top right;
   background-size: cover;
   background-attachment: fixed;

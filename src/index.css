@@ -192,8 +192,8 @@ li {
 justify-content: space-between;
 }
 
-.flex-right,
-.flex-left {
+.flex--right,
+.flex--left {
   flex: 0 1 46%;
   padding: 4rem;
 }
@@ -303,10 +303,14 @@ section {
   text-transform: capitalize;
 }
 
+.figure{
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
 .img {
   width: 100%;
   height: 100%;
-  border-radius: 1rem;
   object-fit: cover;
 
   transition: transform .3s ease-in-out;

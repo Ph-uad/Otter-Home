@@ -2,7 +2,7 @@
 import Listing from './Listing'
 import Nav from '../components/nav/Nav';
 import Header from '../components/header/Header';
-import Service from '../components/Plan/Services';
+import Service from '../components/plan/Services';
 import Footer from '../components/footer/Footer';
 
 const Homepage = () => {

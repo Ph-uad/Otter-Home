@@ -1,14 +1,20 @@
 import Classes from './listing.module.css';
-import Modal from '../UI/overlayModal/Modal'
+import Modal from '../ui/overlayModal/Modal'
 import { Link} from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { propActions } from '../../data/ApartmentData';
 
 const ListModal = ({ data, close }) => {
 
+    const dispatch = useDispatch();
+
+    const detailHandler = (data) =>{
+        dispatch(propActions.check(data))
+    }
 
     return (
         <Modal>
             <span className={ `${Classes.close} close` } onClick={ close }>&times;</span>
-
 
             <div className={ `flex ${Classes["modal__container"]}` }>
 
@@ -32,7 +38,7 @@ const ListModal = ({ data, close }) => {
 
 
                     <Link to="/listing/details">
-                        <button className={ `btn btn--tertiary ${Classes["btn"]}` }>
+                        <button onClick={()=>detailHandler(data)} className={ `btn btn--tertiary ${Classes["btn"]}` }>
                             More Details
                         </button>
                     </Link>

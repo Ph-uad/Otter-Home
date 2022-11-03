@@ -7,7 +7,7 @@ import Homepage from '../pages/Hompage';
 import Nav from '../components/nav/Nav';
 import AboutUs from '../pages/AboutUs';
 import Contact from '../pages/Contact';
-import PropertyDetails from '../components/PropertyDetails/PropertyDetails';
+import PropertyDetails from '../components/propertyDetails/PropertyDetails';
 
 
 function App() {
