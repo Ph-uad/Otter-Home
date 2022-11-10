@@ -11,7 +11,7 @@
     background: inherit;
     cursor: pointer;
     text-transform: capitalize;
-    margin: 10rem auto;
+    margin: 2rem 0;
 }
 
 *{
@@ -30,8 +30,7 @@
 
 
 .btn--secondary {
-    background: var(--color-secondary);
-    color: var(--color-white);
+     background: var(--color-primary__light); 
 }
 
 .btn--tertiary {

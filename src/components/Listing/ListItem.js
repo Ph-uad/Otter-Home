@@ -4,7 +4,7 @@ import Classes from './listing.module.css';
 import ListModal from './ListingModal'
 
 
-const ListItems = ({count}) => {
+const ListItems = ({show}) => {
 
 
     const [modal, setModal] = useState();
@@ -17,14 +17,6 @@ const ListItems = ({count}) => {
 
     const property = useSelector(state => state.property.list)
     const lists = property.map((item, index) => {
-
-        if(count){
-
-            for (let index = 0; index < count; index++) {
-                
-                
-            }
-        }
         return (
             <li className={ `list__item` } key={ index } onClick={ () => toggleModalHandler(item) }>
 

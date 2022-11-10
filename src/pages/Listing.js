@@ -1,7 +1,7 @@
 import ListItems from "../components/listing/ListItem";
 import Classes from '../components/listing/listing.module.css';
 
-const Listing = () => {
+const Listing = ({count}) => {
 
     return (
         <>
@@ -10,7 +10,7 @@ const Listing = () => {
                 <h2 className=" heading-secondary bolder">Current Listing</h2>
                 <div className={ Classes }>
                 </div>
-                <ListItems count={8} />
+                <ListItems show={count} />
             </section>
         </>
 

@@ -1,3 +1,13 @@
+@-webkit-keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
 @keyframes animate-pop {
   0% {
     opacity: 0;
@@ -13,18 +23,31 @@
   background-position: top right;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
   height: 100vh;
 }
-.header__container {
-  width: 60%;
-  padding: 4rem;
-  margin-top: auto;
+.header::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, rgba(17, 17, 17, 0.7294117647) 10%, transparent);
 }
+
+.header__container {
+  padding: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
 .header-text {
   -webkit-animation: animate-pop 0.5s ease-in-out 0.2s forwards;
           animation: animate-pop 0.5s ease-in-out 0.2s forwards;
 }
+
 .header__option {
   margin-top: 10rem;
   flex-wrap: nowrap;
-}
+}/*# sourceMappingURL=header.module.css.map */

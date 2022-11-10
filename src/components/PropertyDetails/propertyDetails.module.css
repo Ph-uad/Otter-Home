@@ -1,7 +1,8 @@
 .header{
     height: 80vh;
-    width: 100vw;
-    background-position: top center;
+    width: 90vw;
+    margin: 0% auto;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -11,5 +12,5 @@
     margin-top: 4rem;
     width: 45rem;
     aspect-ratio: 1;
-    clip-path: circle(40% at 50% 39%);
+    /* clip-path: circle(40% at 50% 39%); */
 }

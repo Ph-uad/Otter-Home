@@ -1,0 +1,15 @@
+.section{
+height: max-content;
+position: relative;
+}
+
+.right{
+  position: relative;
+}
+
+.figure{
+    border-radius: 0;
+    top: -50%;
+    left: 20%;
+    z-index: -2;
+}

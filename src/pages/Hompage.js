@@ -1,9 +1,12 @@
 
-import Listing from './Listing'
 import Nav from '../components/nav/Nav';
 import Header from '../components/header/Header';
 import Service from '../components/plan/Services';
 import Footer from '../components/footer/Footer';
+import Attributes from '../components/attribute/attribute1';
+import Attributes2 from '../components/attribute/attribute2';
+import Caption from '../components/attribute/caption';
+import Testimonials from '../components/attribute/testimonial';
 
 const Homepage = () => {
 
@@ -11,10 +14,11 @@ const Homepage = () => {
         <>
             <Header />
             <Nav />
+            <Attributes/>
+            <Attributes2/>
             <Service />
-            <div className="fluid-container" id='apartment'>
-                <Listing />
-            </div>
+            <Caption/>
+            <Testimonials/>
             <Footer />
         </>
     )

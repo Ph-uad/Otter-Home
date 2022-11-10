@@ -13,10 +13,9 @@ const PropertyDetails = () => {
         <section className="flex">
 
 
-            <header className={ Classes.header } style={ { backgroundImage: `url(${data.image})` } }>
-
-            </header>
-            <div className="flex">
+            <header className={ Classes.header } style={ { backgroundImage: `url(${data.image})` } }></header>
+            
+            <div className="">
                 <div className="flex--right">
                     <li className="list header__details">
                         <ul className="list--item"><h2 className="heading--secondary">{ data.location }</h2>  </ul>
@@ -36,7 +35,6 @@ const PropertyDetails = () => {
                 <h3 className="gallery "> Agent </h3>
                 <figure className={`figure ${Classes.figure}`}>
                     <img src={Agent} alt="" className="img" />
-                   
                 </figure>
                 <h4 className="heading--tertiary">Aubrie Tatcha</h4>
 

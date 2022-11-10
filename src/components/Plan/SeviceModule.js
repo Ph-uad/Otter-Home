@@ -1,7 +1,8 @@
+import React from 'react';
 import Classes from './services.module.css';
 
 
-const Module = ({data}) => {
+const Module =({data}) => {
 
     return (
         <div className={`mod flex ${Classes.module}`}>
