@@ -10,7 +10,7 @@ import { configureStore, createSlice } from '@reduxjs/toolkit'
 
 const propertyList = [
     {
-        "location": "Omole",
+        "location": "Festac",
         "town": "Ikeja",
         "image": Image,
         bathroom: 3,

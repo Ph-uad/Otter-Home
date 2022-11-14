@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,300&display=swap");
 
 :root {
-  --color-primary: #145a94;
-  --color-primary__light: #b6d4eb;
+  --color-primary: #3F6655;
+  --color-primary__light: #3F6655;
 
   --color-contrast: #fefefe;
   --color-contrast__light: #d2e7f5;
 
-  --color-white: #ffffff;
-  --color-gray: #a8a3a3;
-  --color-black: #353534;
+  --color-white: #F6F9FC;
+  --color-gray__dark: #25272a;
+  --color-gray: #72787f;
+  --color-black: #384853;
 
   --shadow: 3px 11px 13px #3c210a;
 }
@@ -20,7 +21,10 @@
   padding: 0%;
   margin: 0%;
   box-sizing: inherit;
+
+    transition: .4s ease-in-out;
 }
+
 
 html {
   font-size: 62.5%;
@@ -95,13 +99,10 @@ body::-webkit-scrollbar {
   display: inline;
 }
 
-
-
 .center {
   margin: 0 auto;
   text-align: center;
 }
-
 /*  */
 
 /* typography */
@@ -112,11 +113,14 @@ h4,
 h5 {
   font-family: sans-serif;
   text-transform: capitalize;
+  color: var(--color-gray__dark);
 }
 
-.heading-jumbo {
+.heading--jumbo {
   font-size: 5.4rem;
   text-transform: uppercase;
+  z-index: 1;
+  color: var(--color-white);
 }
 
 .heading--primary {
@@ -125,26 +129,25 @@ h5 {
   text-transform: capitalize;
 }
 
-.heading-secondary {
+.heading--secondary {
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 200;
 }
 
-.heading-tertiary {
+.heading--tertiary {
   font-size: 2rem;
 }
 
-.heading-tertiary__light {
-  font-size: 1.8rem;
-  font-weight: 300;
-}
-
-.heading-quadruple {
+.heading--quadruple {
   font-size: 1.7rem;
   font-weight: 700;
   font-family: cursive;
   text-transform: lowercase;
-  color: #796b1e;
+  color: var(--color-primary);
+}
+
+.paragraph{
+  color: var(--color-gray);
 }
 
 .text-white {
@@ -256,10 +259,11 @@ section {
 
 .section {
   width: 80vw;
+  content-visibility:auto;
 }
 
 .page{
-  height: 100vh;
+  margin: 6% auto;
   width: 100vw;
 }
 

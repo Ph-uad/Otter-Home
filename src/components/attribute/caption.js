@@ -2,7 +2,7 @@ import Classes from './attribute.module.css'
 
 function Attributes() {
     return (
-        <section className={ `section flex ${Classes.section}` }>
+        <section className={ `section flex ${Classes.section} ${Classes.caption}` }>
         <div className="section--container center flex">
           <h2 className="heading--jumbo center">Experience haven in delight</h2>
         </div>

@@ -2,10 +2,11 @@ import Image from '../../assets/img/building2.jpg'
 import Classes from './attribute.module.css'
 
 function Attributes() {
+    
     return (<section className={`section flex ${Classes.section}`}>
         <div className="section--container flex">
             <div className={ `flex--left ${Classes.right} ` }>
-                <h2 className="heading--primary">Living in a work of artful design</h2>
+                <h2 className="heading--primary">Living in a work of artistic designs</h2>
             </div>
 
             <div className={ `flex--right ${Classes.right} ` }>

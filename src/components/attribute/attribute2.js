@@ -6,7 +6,7 @@ function Attributes() {
         <section className={ `section flex ${Classes.section}` }>
             <div className="section--container flex">
                 <div className={ `flex--right ${Classes.right} ` }>
-                    <h2 className="heading--primary">commemoration of the Past and New</h2>
+                    <h2 className="heading--primary">Archaic or Modern Architecture</h2>
                 </div>
 
                 <div className={ `flex--left ${Classes.right} ` }>

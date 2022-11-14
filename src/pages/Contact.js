@@ -1,18 +1,18 @@
 // import About from "../components/About/About";
 
-import Contact from "../components/contact/Contact";
+import Contacts from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
+import Nav from '../components/nav/Nav'
 
 
-const COntact = () =>{
+const Contact = () =>{
 
     return(
         <>
-                <Contact/>
+        <Nav/>
+                <Contacts/>
                 <Footer/>
         </>
-
     )
 }
-
-export default COntact;
+export default Contact;

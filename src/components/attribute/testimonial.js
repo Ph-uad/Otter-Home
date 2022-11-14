@@ -1,14 +1,14 @@
-
+import Classes from './attribute.module.css'
 
 const Testimonials = () => {
 
     return (
         <section className='container'>
-            <div className="center flex">
-                <h2 className="heading--secondary flex--left">Testimonial</h2>
-                <div className="flex--right">
+            <div className="flex">
+                <div className={Classes.testimony}>
+                    <h2 className="heading--secondary">This Month Testimonial</h2>
                     <p className="paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem qui, vel amet ut veritatis accusantium eum iusto dolorum molestias deleniti sequi neque, debitis quos. Aut in maxime suscipit eius ipsa quae amet.
+                        This is where the one customer we agree with the most comment will come to stay and represent our company to the world as a perspective oof excellence.TThis part could be true fabricated or be a half truth t our conducts and services.
                     </p>
                 </div>
             </div>

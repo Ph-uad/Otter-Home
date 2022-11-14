@@ -9,12 +9,12 @@
     }
   }
   .header {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7411764706), rgba(0, 0, 0, 0.7411764706)), url(../../assets/img/hero.jpg);
+    background: linear-gradient(0deg, #000000a2, #000000a2), url(../../assets/img/hero.jpg);
     background-position: top right;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    height: 100vh;
+    height: 85vh;
 
     &::after{
         content: '';
@@ -31,6 +31,7 @@
     padding: 4rem;
     position: relative;
     z-index: 1;
+    width: min(50%, 40vw);
   }
   .header-text {
             animation: animate-pop 0.5s ease-in-out 0.2s forwards;
@@ -38,5 +39,11 @@
   .header__option {
     margin-top: 10rem;
     flex-wrap: nowrap;
+  }
+
+  .paragraph{
+    color: var(--color-white);
+    font-size: 1.6rem;
+    
   }
 

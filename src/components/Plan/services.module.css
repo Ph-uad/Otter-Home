@@ -1,6 +1,7 @@
 .container {
   width: 100%;
   overflow: scroll;
+  position: relative;
 }
 
 .heading,
@@ -9,8 +10,12 @@
   margin: 5rem auto;
 }
 
-.card {
+.nav{
+  max-width: 12%;
+  margin-left: 80%;
+}
 
+.card {
   overflow: hidden;
   position: relative;
 }
@@ -58,7 +63,5 @@
 }
 
 .navigation__elipse--left {
-
-  margin-left: 90%;
 }
 

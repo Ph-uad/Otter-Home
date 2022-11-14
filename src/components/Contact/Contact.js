@@ -5,7 +5,7 @@ const Contact = () => {
         <div className={ `page flex ${Classes.contact}` }>
             
             <form action="" className={ `${Classes.form} ` }>
-                <h2 className='heading__secondary'>contact</h2>
+                <h2 className='heading--secondary'>contact</h2>
                 <div className={ Classes["form__control"] }>
                     <input placeholder='First Name' className={ Classes["form__input"] } type="text" name="firstname" id="firstName" />
                     <label className={ Classes["form__label"] } htmlFor="firstName" >First Name:</label>

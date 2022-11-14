@@ -5,7 +5,7 @@
 .form{
     padding: 4rem 5rem;
     position: relative;
-    width: 50%;
+    width: min(90%, 60vw);
 }
 
 .form__control{
@@ -17,6 +17,7 @@
     border: none;
     width: 100%;
     border-bottom: 1px solid rgb(93, 93, 93);
+    background: inherit;
 }
 
 .form__input::placeholder{

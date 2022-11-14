@@ -11,12 +11,9 @@ const Service = () => {
         { img: Family, title: "Your Plan To Build A home" },
         { img: Office, title: "Your Plan To Build A work space" },
         { img: Vacation, title: "Your Plan To Build A Vacation" },
-    ]
-
+    ];
     const cardRef = useRef(null);
-
     const [initialSlideIndex, setCurrentSlideIndex] = useState(0);
-    // let nextSlideIndex = initialSlideIndex === CardData.length - 1 ? 0 : initialSlideIndex + 1;
 
 
     const previousSlide = () => {
@@ -45,8 +42,8 @@ const Service = () => {
     return (
         <section className={ Classes.container }>
             <div className={ Classes.heading }>
-                <h4 className="heading-quadruple">types of properties</h4>
-                <h2 className=" heading-secondary bolder">Your Plan </h2>
+                <h4 className="heading--quadruple">types of properties</h4>
+                <h2 className=" heading--secondary bolder">Your Plan </h2>
             </div>
 
             <div ref={ cardRef } className={ Classes.card }>
