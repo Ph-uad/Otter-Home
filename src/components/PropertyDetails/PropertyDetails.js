@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import Classes from './propertyDetails.module.css'
 import Agent from '../../assets/img/agent.jpg'
+import Footer from "../footer/Footer";
 
 
 const PropertyDetails = () => {
@@ -10,12 +11,13 @@ const PropertyDetails = () => {
 
 
     return (
-        <section className="flex">
-
-
-            <header className={ Classes.header } style={ { backgroundImage: `url(${data.image})` } }></header>
+        <section className="">
+            <figure className={`figure ${Classes.header}`}>
+            <img className={`img ${Classes.img}`} src={data.image} alt="proprty"/>
             
-            <div className="">
+            </figure>
+            
+            <div className={`flex ${Classes.detail}`}>
                 <div className="flex--right">
                     <li className="list header__details">
                         <ul className="list--item"><h2 className="heading--secondary">{ data.location }</h2>  </ul>
@@ -38,10 +40,10 @@ const PropertyDetails = () => {
                 </figure>
                 <h4 className="heading--tertiary">Aubrie Tatcha</h4>
 
-                <button className="btn btn--primary">Make Enquiries</button>
+                <button className="btn btn--secondary">Make Enquiries</button>
                 </div>
             </div>
-
+            <Footer/>
         </section>
     )
 }

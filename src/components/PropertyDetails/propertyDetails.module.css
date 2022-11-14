@@ -10,7 +10,16 @@
 
 .figure{
     margin-top: 4rem;
-    width: 45rem;
+    width: 30rem;
     aspect-ratio: 1;
-    /* clip-path: circle(40% at 50% 39%); */
+    clip-path: circle(40% at 40% 40%);
+}
+
+.img:hover{
+    transform:scale(1);
+}
+
+.detail{
+    width: 80vw;
+    margin: 0 auto;
 }
