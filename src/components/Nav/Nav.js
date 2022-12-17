@@ -20,6 +20,9 @@ function Nav() {
                     <NavLink className={({ isActive }) => (isActive ?  'current'  : null)}  to='/contact'>contact</NavLink>
                 </li>
             </ul>
+            <span>
+                Login
+            </span>
         </nav>
     );
 

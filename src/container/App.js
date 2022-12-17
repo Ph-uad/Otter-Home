@@ -7,6 +7,7 @@ import Homepage from '../pages/Hompage';
 import AboutUs from '../pages/AboutUs';
 import Contact from '../pages/Contact';
 import PropertyDetails from '../components/propertyDetails/PropertyDetails';
+import PageNotFound from '../pages/PageNotFound';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/listing/details" element={ <PropertyDetails /> } />
         <Route path="/about" element={ <AboutUs /> } />
         <Route path="/contact" element={ <Contact /> } />
+        <Route path="*" element={ <PageNotFound /> } />
       </Routes>
     </div>
   );

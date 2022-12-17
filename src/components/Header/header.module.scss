@@ -8,42 +8,16 @@
       transform: scale(1, 1);
     }
   }
+
   .header {
-    background: linear-gradient(0deg, #000000a2, #000000a2), url(../../assets/img/hero.jpg);
+    background: linear-gradient(to right, #111111e1 40%,transparent), url(../../assets/img/hero.jpg);
     background-position: top right;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    height: 85vh;
-
-    &::after{
-        content: '';
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background: linear-gradient(to right, #111111ba 10%,transparent);
-    }
-  }
-  
-  .header__container {
-    padding: 4rem;
-    position: relative;
-    z-index: 1;
-    width: min(50%, 40vw);
-  }
-  .header-text {
-            animation: animate-pop 0.5s ease-in-out 0.2s forwards;
-  }
-  .header__option {
-    margin-top: 10rem;
-    flex-wrap: nowrap;
+    height: 95vh;
   }
 
-  .paragraph{
-    color: var(--color-white);
-    font-size: 1.6rem;
-    
+  .header--text {
+    animation: animate-pop 0.5s ease-in-out 0.2s forwards;
   }
-
