@@ -5,7 +5,7 @@ const Search = ({content, setSearchText}) =>{
 
     return(
         <form action="search">
-               <input className="search" type="text" placeholder="Search properties..." onChange={changeHandler} />
+               <input spellCheck="false" className="search" type="text" placeholder="Search properties..." onChange={changeHandler} />
         </form>
     )
 

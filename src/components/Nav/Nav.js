@@ -1,17 +1,10 @@
-
-import { useState } from 'react';
-import { useSelector } from 'react-redux';
 import { Link, NavLink } from 'react-router-dom';
-import Search from '../../utility/search';
 import Classes from './nav.module.css';
 
 
 function Nav() {
 
-    const content = useSelector(state => state.property.list)
-    const [searchResult, setSeaarchResult] = useState([])
 
-    console.log(searchResult);
 
     return (
         <nav className={ `${Classes['nav']} flex width--max` }>
@@ -31,7 +24,7 @@ function Nav() {
             </ul>
             
             <span>
-               <Search content={content} setSearchText={setSeaarchResult} />
+                Login
             </span>
         </nav>
     );
