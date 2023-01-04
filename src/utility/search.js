@@ -1,11 +1,18 @@
 
-const Search = ({content, setSearchText}) =>{
+const Search = ({list, searchResult}) =>{
 
-    const changeHandler = e =>{setSearchText(e.target.value);}
+    const submitHandler = e =>{e.preventDefault();}
+
+    const onChangeHandler = e => {
+        if(!e.target.value.trim())return searchResult(list);
+
+        const resultArray = list.filter(item => item.location.toLowerCase().includes(e.target.value) || item.description.toLowerCase().includes(e.target.value));
+        searchResult(resultArray)
+    }
 
     return(
-        <form action="search">
-               <input spellCheck="false" className="search" type="text" placeholder="Search properties..." onChange={changeHandler} />
+        <form className="search" onSubmit={submitHandler}>
+               <input spellCheck="false" className="search__input width--mid" type="text" placeholder="Search properties by locaton..." onChange={onChangeHandler} />
         </form>
     )
 

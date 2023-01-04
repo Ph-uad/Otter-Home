@@ -1,40 +1,15 @@
-import { useEffect } from "react";
-import { useState } from "react";
-import { useSelector } from "react-redux";
-import Search from "../../utility/search";
 import Classes from './listing.module.css';
 import ListModal from './ListingModal'
+import { useState } from 'react';
 
 
-const ListItems = ({ show }) => {
-    let propertyList = useSelector(state => state.property.list);
-    const [initialList, setFilteredList] = useState(propertyList)
+const ListItem = ({result}) =>{
+
     const [modal, setModal] = useState();
-    const [searchText, setSearchText] = useState(' ');
-
     const toggleModalHandler = (item) => setModal(item);
     const closeModalHandler = () => setModal();
 
-
-    useEffect(() => {
-
-        // const resultArrays = () => {
-        //     if (searchText.trim() === '') {
-        //         return propertyList
-        //     } else {
-        //         return (
-        //         initialList.filter((item) => searchText.trim() !== '' && item.location.toLowerCase().trim().includes(searchText)));
-        //     }
-        // }
-        // setFilteredList(resultArrays);
-
-        console.log('running...')
-
-        return () => initialList(propertyList);
-    },[initialList, propertyList, searchText])
-
-
-    let lists = initialList.map((item, index) => {
+    let lists = result.map((item, index) => {
         return (
             <li className={ `list__item` } key={ index } onClick={ () => toggleModalHandler(item) }>
                 <figure className={ Classes.figure }>
@@ -60,16 +35,12 @@ const ListItems = ({ show }) => {
         )
     });
 
-
-    return (
+    return(
         <>
-            <Search setSearchText={ setSearchText } />
-            <div className="grid">
-                { lists }
-                { modal && <ListModal data={ modal } close={ closeModalHandler } /> }
-            </div>
+            {lists}
+            { modal && <ListModal data={ modal } close={ closeModalHandler } /> }
         </>
-    )
-
+    );
 }
-export default ListItems;
+
+export default ListItem;

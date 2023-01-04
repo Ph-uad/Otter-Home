@@ -1,9 +1,9 @@
-import ListItems from "../components/listing/ListItem";
+import ListPage from "../components/listing/ListPage";
 import Classes from '../components/listing/listing.module.css';
 import Nav from "../components/nav/Nav";
 import Footer from "../components/footer/Footer";
 
-const Listing = ({count}) => {
+const Listing = () => {
 
     return (
         <>
@@ -13,7 +13,7 @@ const Listing = ({count}) => {
                 <h2 className=" heading--secondary bolder">Current Listing</h2>
                 <div className={ Classes }>
                 </div>
-                <ListItems show={count} />
+                <ListPage />
             </section>
             <Footer/>
         </>
