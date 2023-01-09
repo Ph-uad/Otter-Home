@@ -1,4 +1,4 @@
-import Image from '../../assets/img/building4.jpg'
+import Image from '../../Assets/img/building4.jpg'
 import Classes from './attribute.module.css'
 
 function Attributes() {

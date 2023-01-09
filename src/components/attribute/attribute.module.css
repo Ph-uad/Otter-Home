@@ -16,7 +16,7 @@ position: relative;
 
 .caption{
   height: 40vh;
-  background:url("../../assets/img/complex.jpg") center center/cover no-repeat ;
+  background:url('../../Assets/img/complex.jpg') center center/cover no-repeat ;
   width: 100vw;
   position: relative;
 }

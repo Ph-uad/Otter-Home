@@ -1,10 +1,10 @@
-import Image from '../assets/img/building.jpg'
-import Image1 from '../assets/img/building1.jpg'
-import Image2 from '../assets/img/building2.jpg'
-import Image3 from '../assets/img/building3.jpg'
-import Image4 from '../assets/img/building4.jpg'
-import Image5 from '../assets/img/building5.jpg'
-import Image6 from '../assets/img/building6.jpg'
+import Image from '../Assets/img/building.jpg'
+import Image1 from '../Assets/img/building1.jpg'
+import Image2 from '../Assets/img/building2.jpg'
+import Image3 from '../Assets/img/building3.jpg'
+import Image4 from '../Assets/img/building4.jpg'
+import Image5 from '../Assets/img/building5.jpg'
+import Image6 from '../Assets/img/building6.jpg'
 
 import { configureStore, createSlice } from '@reduxjs/toolkit'
 

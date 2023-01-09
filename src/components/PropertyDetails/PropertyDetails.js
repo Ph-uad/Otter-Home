@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import Classes from './propertyDetails.module.css'
-import Agent from '../../assets/img/agent.jpg'
-import Footer from "../footer/Footer";
+import Agent from '../../Assets/img/agent.jpg'
+import Footer from '../Footer/Footer';
 
 
 const PropertyDetails = () => {

@@ -1,7 +1,7 @@
-import ListItems from "../components/listing/ListItem";
-import Classes from '../components/listing/listing.module.css';
-import Nav from "../components/nav/Nav";
-import Footer from "../components/footer/Footer";
+import ListItems from "../components/Listing/ListItem";
+import Classes from '../components/Listing/listing.module.css';
+import Nav from "../components/Nav/Nav";
+import Footer from "../components/Footer/Footer";
 
 const Listing = ({count}) => {
 

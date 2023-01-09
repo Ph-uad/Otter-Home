@@ -6,7 +6,7 @@ import Listing from '../pages/Listing';
 import Homepage from '../pages/Hompage';
 import AboutUs from '../pages/AboutUs';
 import Contact from '../pages/Contact';
-import PropertyDetails from '../components/propertyDetails/PropertyDetails';
+import PropertyDetails from '../components/PropertyDetails/PropertyDetails';
 import PageNotFound from '../pages/PageNotFound';
 
 

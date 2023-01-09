@@ -1,8 +1,8 @@
 // import About from "../components/About/About";
 
-import Contacts from "../components/contact/Contact";
-import Footer from "../components/footer/Footer";
-import Nav from '../components/nav/Nav'
+import Contacts from "../components/Contact/Contact";
+import Footer from "../components/Footer/Footer";
+import Nav from '../components/Nav/Nav'
 
 
 const Contact = () =>{

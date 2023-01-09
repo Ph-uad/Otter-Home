@@ -19,7 +19,7 @@
   }
 }
 .header {
-  background: linear-gradient(to right, rgba(17, 17, 17, 0.8823529412) 40%, transparent), url(../../assets/img/hero.jpg);
+  background: linear-gradient(to right, rgba(17, 17, 17, 0.8823529412) 40%, transparent), url(../../Assets/img/hero.jpg);
   background-position: top right;
   background-size: cover;
   background-attachment: fixed;
