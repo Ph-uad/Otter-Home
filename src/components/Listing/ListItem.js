@@ -1,25 +1,17 @@
-import { useState } from "react";
-import { useSelector } from "react-redux";
 import Classes from './listing.module.css';
 import ListModal from './ListingModal'
+import { useState } from 'react';
 
 
-const ListItems = ({show}) => {
-
+const ListItem = ({result}) =>{
 
     const [modal, setModal] = useState();
-    const toggleModalHandler = (item) => {
-        setModal(item);
-    }
-    const closeModalHandler = () => {
-        setModal();
-    }
+    const toggleModalHandler = (item) => setModal(item);
+    const closeModalHandler = () => setModal();
 
-    const property = useSelector(state => state.property.list)
-    const lists = property.map((item, index) => {
+    let lists = result.map((item, index) => {
         return (
             <li className={ `list__item` } key={ index } onClick={ () => toggleModalHandler(item) }>
-
                 <figure className={ Classes.figure }>
                     <img className={ `img ${Classes.img}` } src={ item.image } alt="property" />
                 </figure>
@@ -41,14 +33,14 @@ const ListItems = ({show}) => {
                 </div>
             </li>
         )
-    })
+    });
 
-    return (
-        <div className="grid">
-            { lists }
+    return(
+        <>
+            {lists}
             { modal && <ListModal data={ modal } close={ closeModalHandler } /> }
-        </div>
-    )
-
+        </>
+    );
 }
-export default ListItems;
+
+export default ListItem;

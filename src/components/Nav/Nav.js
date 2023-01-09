@@ -1,15 +1,17 @@
-
 import { Link, NavLink } from 'react-router-dom';
 import Classes from './nav.module.css';
 
 
 function Nav() {
+
+
+
     return (
-        <nav className={ `${Classes['nav']} flex` }>
+        <nav className={ `${Classes['nav']} flex width--max` }>
             <span className={ Classes.logo }>
-                <Link className={ ` ${Classes['list-link']}` } to="/home">🦦</Link>
+                <Link className={ `link heading--secondary`} to="/home">🦦</Link>
             </span>
-            <ul className={ ` ${Classes['list']} flex` }>
+            <ul className={`${Classes['list']} flex` }>
                 <li className={ ` ${Classes['list-link']}` }>
                     <NavLink className={({ isActive }) => (isActive ? 'current' : null)}  to='/listing'>Listing</NavLink>
                 </li>
@@ -20,6 +22,7 @@ function Nav() {
                     <NavLink className={({ isActive }) => (isActive ?  'current'  : null)}  to='/contact'>contact</NavLink>
                 </li>
             </ul>
+            
             <span>
                 Login
             </span>
