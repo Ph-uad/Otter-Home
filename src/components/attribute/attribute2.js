@@ -17,7 +17,6 @@ function Attributes() {
                     <p className="paragraph">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ad quis consectetur laborum qui repellendus. Repellat quos maxime quod minima, distinctio nisi aliquid itaque odio.
                     </p>
-                    <button className="btn btn--secondary">Utilities</button>
                 </div>
             </div>
 
