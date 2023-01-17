@@ -17,25 +17,25 @@ const Service = () => {
 
 
     const previousSlide = () => {
-        cardRef.current.classList.add('red')
+        cardRef.current.classList.add('previousSlide')
 
         let isFirstSlide = initialSlideIndex === 0;
         let newSlide = isFirstSlide ? CardData.length - 1 : initialSlideIndex - 1
         setCurrentSlideIndex(newSlide);
 
         setTimeout(() => {
-            cardRef.current.classList.remove('red')
+            cardRef.current.classList.remove('previousSlide')
         }, 500)
     
     }
 
     const nextSlide = () => {
-        cardRef.current.classList.add('red2')
+        cardRef.current.classList.add('nextSlide')
         let isFirstSlide = initialSlideIndex === CardData.length - 1;
         let newSlide = isFirstSlide ? 0 : initialSlideIndex + 1
         setCurrentSlideIndex(newSlide);
         setTimeout(() => {
-            cardRef.current.classList.remove('red2')
+            cardRef.current.classList.remove('nextSlide')
         }, 500)
     }
 

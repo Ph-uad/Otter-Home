@@ -379,13 +379,13 @@ section {
   text-decoration: underline !important;
 }
 
-.red {
+.previousSlide {
 
   animation: animateCard .4s ease-in-out forwards;
   transition: .4s ease-in-out;
 }
 
-.red2 {
+.nextSlide {
   animation: animateCard .4s ease-in-out reverse;
   transition: .4s ease-in-out;
 }
