@@ -1,0 +1,20 @@
+.header {
+  background: linear-gradient(to right, #20221fe1 , #3439326a), url(../../../Assets/img/hero.jpg);
+  background-position: top right;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 95vh;
+  color: var(--color-gray-100);
+}
+
+.header--text {
+  -webkit-animation: animate-pop 0.5s ease-in-out 0.2s forwards;
+          animation: animate-pop 0.5s ease-in-out 0.2s forwards;
+}
+
+@media (min-width:66em) {
+  .header--text{
+    width: 50%;
+  }
+}

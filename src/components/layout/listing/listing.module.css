@@ -1,0 +1,62 @@
+
+.figure {
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.flex {
+    justify-content: flex-start;
+    gap: .5rem;
+}
+
+
+
+.modal__container {
+    padding: 6rem 10rem;
+    background: var(--color-gray-100);
+}
+
+.modal__figure {
+    overflow: hidden;
+    border-radius: .5rem;
+    aspect-ratio: 1/1.1;
+}
+
+
+.modal__details {
+    position: relative;
+    padding: 2rem 0;
+}
+
+@media (min-width: 50em) {
+    .modal__details, 
+    .modal__figure {
+      flex: 0 1 45%;
+    }
+}
+
+.btn {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    margin: 0;
+}
+
+.close {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.close:hover {
+    opacity: .6;
+}
+
+/* .icon{
+    width: 10%;
+    height: 10%;
+    display: flex;
+} */

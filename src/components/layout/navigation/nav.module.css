@@ -1,0 +1,36 @@
+.nav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: #0000004e;
+  -webkit-backdrop-filter: saturate(120%) blur(10px);
+          backdrop-filter: saturate(120%) blur(10px);
+  cursor: pointer;
+  padding: 0 4rem;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+.logo {
+  font-size: 4rem;
+}
+
+.list{
+  gap: .1rem;
+}
+
+.list-link a,
+.list-link {
+  cursor: pointer;
+  padding:1rem 1.5rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--color-gray-100);
+  transition: all 0.5s ease-in;
+}
+
+.list-link:hover a,
+.list-link a:active
+.list-link .current {
+  text-decoration: underline;
+}

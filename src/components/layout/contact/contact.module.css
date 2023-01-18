@@ -1,0 +1,48 @@
+.contact{
+    justify-content: center;
+}
+
+.form{
+    padding: 4rem 5rem;
+    position: relative;
+    width: min(90%, 60vw);
+}
+
+.form__control{
+    padding: 3rem 2.5rem;
+}
+
+.form__input{
+    outline: none;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid rgb(93, 93, 93);
+    background: inherit;
+}
+
+.form__input::placeholder{
+    position: relative;
+    transition: .4s ease-in-out;
+    opacity: 1;
+}
+
+.form__label{
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    display: inline-block;
+
+    transition: .4s ease-in-out .2s;
+}
+
+.form__input:focus ~ .form__label{
+        left: -1%;
+        opacity: 1;
+        font-weight: bolder;
+}
+
+.form__input:focus::placeholder{
+   position: absolute;
+   left: -2%;
+   opacity: 0;
+}

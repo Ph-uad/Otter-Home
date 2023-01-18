@@ -1,0 +1,14 @@
+.footer{
+    padding: 7rem 25rem;
+}
+
+.footer__baseline{
+    margin-top: 2rem;
+     border-top:1px dotted var(--color-gray); 
+     padding-top: 2rem;
+}
+
+
+.footer__topline{
+    align-items: flex-start;
+}
