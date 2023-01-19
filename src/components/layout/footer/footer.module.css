@@ -1,5 +1,11 @@
 .footer{
-    padding: 7rem 25rem;
+    padding: 7rem 5rem;
+}
+
+@media (min-width:64em) {
+    .footer{
+        padding: 7rem 25rem;
+    }
 }
 
 .footer__baseline{
@@ -11,4 +17,5 @@
 
 .footer__topline{
     align-items: flex-start;
+    flex-wrap: nowrap;
 }

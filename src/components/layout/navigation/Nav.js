@@ -16,7 +16,7 @@ function Nav() {
                     <NavLink className={ ({ isActive }) => (isActive ? 'current' : null) } to='/about'>About us</NavLink>
                 </li>
                 <li className={ ` ${Classes['list-link']}` }>
-                    <NavLink className={ ({ isActive }) => (isActive ? 'current' : null) } to='/contact'>contact</NavLink>
+                    <NavLink className={ ({ isActive }) => (isActive ? 'current' : null) } to='/support'>support</NavLink>
                 </li>
             </ul>
 

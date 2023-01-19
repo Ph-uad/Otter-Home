@@ -425,14 +425,14 @@ section {
   height: 100%;
   object-fit: cover;
 
-  transition: transform .3s ease-in-out;
+  transition: .3s linear;
 }
 
 .img:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
-.circle {
+.eliipse {
   width: 20rem;
   clip-path: circle(45% at 50%);
 }
@@ -440,10 +440,6 @@ section {
 .focal-text {
   color: var(--color-primary__light);
   text-decoration: underline;
-}
-
-.pill {
-  border-radius: 100px !important;
 }
 
 .close {
@@ -456,7 +452,6 @@ section {
 }
 
 .previousSlide {
-
   animation: animateCard .4s ease-in-out forwards;
   transition: .4s ease-in-out;
 }
