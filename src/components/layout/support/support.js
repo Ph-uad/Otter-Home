@@ -1,6 +1,8 @@
-import Classes from './support.moudule.css'
+import Classes from './support.module.css'
 
 const Support = () => {
+
+    
     return (
         <div className={ `page flex ${Classes.support}` }>
             <form action="" className={ `${Classes.form} ` }>
