@@ -1,7 +1,15 @@
 import { useState } from "react";
+import { SetIn } from "final-form";
+import { Form, Field } from "react-final-form";
+import * as Yup from 'yup';
 
 
 const UseInput = (validate) =>{
+
+    const schema = Yup.object({
+        favoriteFood: Yup.string().required("Required"),
+      });
+      
     const [enteredValue, setEnteredValue] = useState('');
     const [isTouched, setIsTouched] = useState(false);
 
