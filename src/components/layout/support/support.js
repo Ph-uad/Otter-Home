@@ -5,36 +5,58 @@ import { useFormik } from "formik";
 
 const Support = () => {
 
-    const validate = () =>{
+    const validate = (values) => {
         const errors = {};
+        if (!values.firstName) {
+            errors.firstName = "Required";
+            console.log(errors)
+            return errors;
+        }
+        if (!values.lastName) {
+            errors.lastName = "Required";
+            return errors;
+        }
     }
 
-
-    const onSubmit = (values) => {
-        console.log("values: ", values);
-    };
-
-    const required = (value) => (value ? undefined : "Required");
+    const {
+        handleSubmit,
+        handleChange,
+        handleBlur,
+        touched,
+        // values, // use this if you want controlled components
+        errors,
+    } = useFormik({
+        initialValues: {
+            firstName: "",
+            lastName: "",
+        },
+        validate,
+        onSubmit: (values) => {
+            console.log(JSON.stringify(values));
+            // values = {"favoriteFood":"ramen","favoritePlace":"mountains"}
+        },
+    });
 
 
     return (
         <div className={ `page flex ${Classes.support}` }>
-            <form onSubmit={ onSubmit }>
+            <form onSubmit={ handleSubmit }>
 
                 <div className={ Classes["form__control"] }>
-                    <input placeholder='Surname' className={ Classes["form__input"] } type="text" name="surName" id="surName" />
-                    <label className={ Classes["form__label"] } htmlFor="surName" >Surname:</label>
+                    <input name="firstName" placeholder='Surname' className={ Classes["form__input"] } type="text" id="firstName" onChange={ handleChange } onBlur={ handleBlur }  />
+                    
+                    { touched.firstName && errors.firstName ? <div>{errors.firstName}</div> : null } 
                 </div>
 
                 <div className={ Classes["form__control"] }>
-                    <input placeholder='Email' className={ Classes["form__input"] } type="mail" name="email" id="email" />
-                    <label className={ Classes["form__label"] } htmlFor="email" >Email:</label>
+                    <input name="lastName" placeholder='Email' className={ Classes["form__input"] } type="mail" id="lastName" onChange={ handleChange } onBlur={ handleBlur }  />
+                    { touched.lastName && errors.lastName ? <div>{errors.lastName}</div> : null }
                 </div>
 
-                <div className={ Classes["form__control"] }>
+                {/* <div className={ Classes["form__control"] }>
                     <input placeholder='Phone' className={ Classes["form__input"] } type="text" name="phone" id="phone" />
                     <label className={ Classes["form__label"] } htmlFor="phone" >Phone:</label>
-                </div>
+                </div> */}
 
                 <button type="submit" className='btn btn--primary'>Submit</button>
             </form>
