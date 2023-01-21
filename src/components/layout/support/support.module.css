@@ -15,8 +15,10 @@
 .form__input{
     outline: none;
     border: none;
+    padding: 2rem 2.5rem;
     width: 100%;
-    border-bottom: 1px solid rgb(93, 93, 93);
+    background: var(--color-gray-100);
+    border-bottom: 1px solid var(--color-gray-500);
     background: inherit;
 }
 

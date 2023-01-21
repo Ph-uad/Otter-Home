@@ -16,6 +16,10 @@ const Support = () => {
             errors.lastName = "Required";
             return errors;
         }
+        if (!values.message) {
+            errors.message = "Required";
+            return errors;
+        }
     }
 
     const {
@@ -29,6 +33,7 @@ const Support = () => {
         initialValues: {
             firstName: "",
             lastName: "",
+            message:"",
         },
         validate,
         onSubmit: (values) => {
