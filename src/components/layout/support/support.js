@@ -43,14 +43,19 @@ const Support = () => {
             <form onSubmit={ handleSubmit }>
 
                 <div className={ Classes["form__control"] }>
-                    <input name="firstName" placeholder='Surname' className={ Classes["form__input"] } type="text" id="firstName" onChange={ handleChange } onBlur={ handleBlur }  />
-                    
+                    <input name="firstName" placeholder='First Name' className={ Classes["form__input"] } type="text" id="firstName" onChange={ handleChange } onBlur={ handleBlur }  />
+
                     { touched.firstName && errors.firstName ? <div>{errors.firstName}</div> : null } 
                 </div>
 
                 <div className={ Classes["form__control"] }>
-                    <input name="lastName" placeholder='Email' className={ Classes["form__input"] } type="mail" id="lastName" onChange={ handleChange } onBlur={ handleBlur }  />
+                    <input name="lastName" placeholder='Last Name' className={ Classes["form__input"] } type="mail" id="lastName" onChange={ handleChange } onBlur={ handleBlur }  />
                     { touched.lastName && errors.lastName ? <div>{errors.lastName}</div> : null }
+                </div>
+
+                <div className={ Classes["form__control"] }>
+                    <input name="message" placeholder='Message' className={ Classes["form__input"] } type="mail" id="message" onChange={ handleChange } onBlur={ handleBlur }  />
+                    { touched.message && errors.message ? <div>{errors.message}</div> : null }
                 </div>
 
                 {/* <div className={ Classes["form__control"] }>
