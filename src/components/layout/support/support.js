@@ -1,4 +1,5 @@
 import Classes from './support.module.css'
+import MailSVG from '../../../Assets/svg/email.svg'
 import { useFormik } from "formik";
 
 
@@ -33,7 +34,7 @@ const Support = () => {
         initialValues: {
             firstName: "",
             lastName: "",
-            message:"",
+            message: "",
         },
         validate,
         onSubmit: (values) => {
@@ -45,31 +46,38 @@ const Support = () => {
 
     return (
         <div className={ `page flex ${Classes.support}` }>
-            <form onSubmit={ handleSubmit }>
+            <div className={ `flex ${Classes.container}` }>
+                <figure className={`figure flex ${Classes.figure}`}>
+                    <img src={MailSVG} alt="mail-icon" />
+                </figure>
+                <form onSubmit={ handleSubmit } className={`${Classes.form}`}>
 
-                <div className={ Classes["form__control"] }>
-                    <input name="firstName" placeholder='First Name' className={ Classes["form__input"] } type="text" id="firstName" onChange={ handleChange } onBlur={ handleBlur }  />
+                    <div className={ Classes["form__control"] }>
+                        <input name="firstName" placeholder='First Name' className={ Classes["form__input"] } type="text" id="firstName" onChange={ handleChange } onBlur={ handleBlur } />
 
-                    { touched.firstName && errors.firstName ? <div>{errors.firstName}</div> : null } 
-                </div>
+                        { touched.firstName && errors.firstName ? <div className='alert--error'>{ errors.firstName }</div> : null }
+                    </div>
 
-                <div className={ Classes["form__control"] }>
-                    <input name="lastName" placeholder='Last Name' className={ Classes["form__input"] } type="mail" id="lastName" onChange={ handleChange } onBlur={ handleBlur }  />
-                    { touched.lastName && errors.lastName ? <div>{errors.lastName}</div> : null }
-                </div>
+                    <div className={ Classes["form__control"] }>
+                        <input name="lastName" placeholder='Last Name' className={ Classes["form__input"] } type="mail" id="lastName" onChange={ handleChange } onBlur={ handleBlur } />
+                        { touched.lastName && errors.lastName ? <div className='alert--error'>{ errors.lastName }</div> : null }
+                    </div>
 
-                <div className={ Classes["form__control"] }>
-                    <input name="message" placeholder='Message' className={ Classes["form__input"] } type="mail" id="message" onChange={ handleChange } onBlur={ handleBlur }  />
-                    { touched.message && errors.message ? <div>{errors.message}</div> : null }
-                </div>
+                    <div className={ Classes["form__control"] }>
+                        <textarea name="message" placeholder='Message' className={ Classes["form__input"] } type="text"  id="message" onChange={ handleChange } onBlur={ handleBlur } />
+                        { touched.message && errors.message ? <div className='alert--error'>{ errors.message }</div> : null }
+                    </div>
 
-                {/* <div className={ Classes["form__control"] }>
+                    {/* <div className={ Classes["form__control"] }>
                     <input placeholder='Phone' className={ Classes["form__input"] } type="text" name="phone" id="phone" />
                     <label className={ Classes["form__label"] } htmlFor="phone" >Phone:</label>
                 </div> */}
 
-                <button type="submit" className='btn btn--primary'>Submit</button>
-            </form>
+                    <button type="submit" className='btn btn--primary'>Submit</button>
+                </form>
+            </div>
+
+
         </div>
     )
 }
