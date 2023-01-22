@@ -39,7 +39,6 @@ const Support = () => {
         validate,
         onSubmit: (values) => {
             console.log(JSON.stringify(values));
-            // values = {"favoriteFood":"ramen","favoritePlace":"mountains"}
         },
     });
 
@@ -47,11 +46,12 @@ const Support = () => {
     return (
         <div className={ `page flex ${Classes.support}` }>
             <div className={ `flex ${Classes.container}` }>
+
                 <figure className={`figure flex ${Classes.figure}`}>
                     <img src={MailSVG} alt="mail-icon" />
                 </figure>
-                <form onSubmit={ handleSubmit } className={`${Classes.form}`}>
 
+                <form onSubmit={ handleSubmit } className={`${Classes.form}`}>
                     <div className={ Classes["form__control"] }>
                         <input name="firstName" placeholder='First Name' className={ Classes["form__input"] } type="text" id="firstName" onChange={ handleChange } onBlur={ handleBlur } />
 
@@ -67,17 +67,9 @@ const Support = () => {
                         <textarea name="message" placeholder='Message' className={ Classes["form__input"] } type="text"  id="message" onChange={ handleChange } onBlur={ handleBlur } />
                         { touched.message && errors.message ? <div className='alert--error'>{ errors.message }</div> : null }
                     </div>
-
-                    {/* <div className={ Classes["form__control"] }>
-                    <input placeholder='Phone' className={ Classes["form__input"] } type="text" name="phone" id="phone" />
-                    <label className={ Classes["form__label"] } htmlFor="phone" >Phone:</label>
-                </div> */}
-
                     <button type="submit" className='btn btn--primary'>Submit</button>
                 </form>
             </div>
-
-
         </div>
     )
 }
