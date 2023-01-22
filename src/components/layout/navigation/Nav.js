@@ -1,5 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import Classes from './nav.module.css';
+import HomeSVG from '../../../Assets/svg/sprite.svg'
+import SVG from '../UI/Svg/Svg';
 
 function Nav() {
 
@@ -9,14 +11,14 @@ function Nav() {
                 <Link className={ `link heading--secondary` } to="/">🦦</Link>
             </span>
             <ul className={ `${Classes['list']} flex` }>
-                <li className={ ` ${Classes['list-link']}` }>
-                    <NavLink className={ ({ isActive }) => (isActive ? 'current' : null) } to='/listing'>Listing</NavLink>
+                <li className={ `flex ${Classes['list-link']}` }>
+                    <NavLink className={ ({ isActive }) => (isActive ? 'current flex' : 'flex') } to='/'><SVG urlId="#icon-building"/> <span>Home </span> </NavLink>
                 </li>
-                <li className={ ` ${Classes['list-link']}` }>
-                    <NavLink className={ ({ isActive }) => (isActive ? 'current' : null) } to='/about'>About us</NavLink>
+                <li className={ `flex ${Classes['list-link']}` }>
+                    <NavLink className={ ({ isActive }) => (isActive ? 'current flex' : 'flex') } to='/listing'><SVG urlId="#icon-building"/> <span>Listing </span></NavLink>
                 </li>
-                <li className={ ` ${Classes['list-link']}` }>
-                    <NavLink className={ ({ isActive }) => (isActive ? 'current' : null) } to='/support'>support</NavLink>
+                <li className={ `flex ${Classes['list-link']}` }>
+                    <NavLink className={ ({ isActive }) => (isActive ? 'current flex' : 'flex') } to='/about'><SVG urlId="#icon-building"/><span> About us</span></NavLink>
                 </li>
             </ul>
 

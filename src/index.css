@@ -356,7 +356,8 @@ li {
   height: 2rem;
   width: 2rem;
   margin-right: .4rem;
-  fill: var(--color-black);
+  fill: #fff;
+  display: inline-block;
 }
 
 .svg-container {
@@ -492,4 +493,54 @@ section {
     opacity: 0;
     transform: translateX(0%);
   }
+}
+
+.spinner{
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 3px solid #ccc9e1;
+  border-top-color: #8f44fd;
+  top: 25%;
+  left: 40%;
+  position: relative;
+  translate: 50% 50%;
+  opacity: 0;
+  animation: spin 4s linear;
+}
+
+@keyframes spin {
+  50% {
+    opacity: 1;
+    rotate: 2turn;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.white{
+  width: 100vw;
+  aspect-ratio: 1;
+  background: white;
+  place-items: center;
+  /* translate: 50% 50%; */
+  border-radius: 10px;
+}
+
+.modal--text{
+  opacity: 1;
+}
+
+.icon > *{
+  fill: #fff;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+button{
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }

@@ -10,13 +10,15 @@
 
 .modal {
   position: fixed;
-  top: 5%;
-  left: 5%;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
   width: calc(100vw - 10%);
   overflow-y: auto;
   z-index: 300;
+  border-radius:10px;
   animation: slide-down 300ms ease-out forwards;
-  background: var(--color-white);
+  background: var(--color-gray-100);
 }
 
 .modal::-webkit-scrollbar{
