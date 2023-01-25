@@ -1,3 +1,7 @@
+.listing{
+    color: var(--color-gray-900);
+}
+
 
 .figure {
     aspect-ratio: 1;

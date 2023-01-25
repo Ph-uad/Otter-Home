@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
+import Classes from './listing.module.css'
 import Search from "../../utility/Search";
 import ListItem from "./ListItem";
 
@@ -11,7 +12,7 @@ const Listing = () => {
 
     return (
         <>
-            <div className="flex">
+            <div className={`flex ${Classes.listing}`}>
                 <h2 className=" heading--secondary bolder">Current Listing</h2>
                 <Search list={ propertyList } setSearchResult={ setSearchResult } />
             </div>

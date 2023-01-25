@@ -347,6 +347,8 @@ li {
   left: 0;
 }
 
+
+
 .svg-text {
   font-size: 1.4rem;
   font-weight: bold;
@@ -355,7 +357,7 @@ li {
 .svg {
   height: 1.5rem;
   width: 1.5rem;
-  fill: inherit;
+  fill: currentColor;
   display: inline-block;
 }
 
@@ -531,9 +533,7 @@ section {
   opacity: 1;
 }
 
-.icon > *{
-  fill: #fff;
-  background: #fff;
+.icon > * {
   height: 100%;
   width: 100%;
 }

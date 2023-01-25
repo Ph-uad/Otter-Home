@@ -9,6 +9,7 @@
   padding: 0 4rem;
   justify-content: space-between;
   font-size: 1.6rem;
+  color: var(--color-gray-100);
 }
 
 .logo {
