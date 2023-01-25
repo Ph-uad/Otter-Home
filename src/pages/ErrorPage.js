@@ -1,12 +1,14 @@
 import Nav from "../components/layout/navigation/Nav";
 
 const ErrorPage = () => {
-    <>
+
+    console.log("working");
+
+
+    <main>
         <Nav />
-        <p className="paragraph center">
-            Error Page
-        </p>
-    </>
+        <h2 className="heading--secondary center">Error Page</h2>
+    </main>
 
 }
 export default ErrorPage;
