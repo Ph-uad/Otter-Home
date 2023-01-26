@@ -8,7 +8,8 @@ import PropertyDetails from './components/layout/propertyDetails/PropertyDetails
 
 const router = createBrowserRouter([
   {
-    path: '/', element: <Root />,
+    path: '/', 
+    element: <Root />,
     errorElement: <ErrorPage />,
     children: [
       { path: '/', element: <HomePage /> },
