@@ -114,11 +114,11 @@ body::-webkit-scrollbar {
   padding: 1.5rem 2rem;
   background: #fff;
   color: #111;
-  border-radius: 30px;
+  border-radius: 10px;
   border: none;
   transition: .4s ease-in-out;
-  margin: 0 auto;
-  width: 50%;
+  width: 90%;
+  translate: 5% 0;
 }
 
 @media (min-width:64em) {
@@ -137,6 +137,7 @@ body::-webkit-scrollbar {
 
 .search__input:focus {
   width: 100%;
+  translate: 0 0;
   outline: none;
 }
 
@@ -214,6 +215,13 @@ h5 {
 .heading--secondary {
   font-size: 4rem;
   font-weight: 200;
+  text-align: center;
+}
+
+@media (min-width:64em){
+  .heading--secondary{
+    text-align: left;
+  }
 }
 
 .heading--tertiary {

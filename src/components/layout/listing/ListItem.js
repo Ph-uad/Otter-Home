@@ -13,7 +13,7 @@ const ListItem = ({ result }) => {
         return (
             <li className={ `list__item` } key={ index } onClick={ () => toggleModalHandler(item) }>
                 <figure className={ Classes.figure }>
-                    <img className={ `img ${Classes.img}` } src={ item.image } alt="property" />
+                    <img decoding='async' loading='lazy' className={ `img ${Classes.img}` } src={ item.image } alt="property" />
                 </figure>
                 <div className={ `` }>
                     <h3 className="heading--tertiary">{ item.location }</h3>
