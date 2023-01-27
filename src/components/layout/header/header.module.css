@@ -13,7 +13,7 @@
           animation: animate-pop 0.5s ease-in-out 0.2s forwards;
 }
 
-@media (min-width:66em) {
+@media (min-width:46em) {
   .header--text{
     width: 50%;
   }

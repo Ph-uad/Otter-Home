@@ -1,7 +1,13 @@
 .listing{
     color: var(--color-gray-900);
+    flex-wrap: wrap;
 }
 
+@media (max-width:64em) {
+    .listing{
+        display: block;
+    }
+}
 
 .figure {
     aspect-ratio: 1;
