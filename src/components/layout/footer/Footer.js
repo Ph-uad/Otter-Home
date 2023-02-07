@@ -28,10 +28,8 @@ const Footer = () => {
 
     return (
         <div className={ Classes["footer"] }>
-            <li className={ `flex ${Classes["footer__topline"]}` }>{ footerContent }
-            </li>
             <div className={ `flex mt ${Classes['footer__baseline']}` }>
-                <span className={ Classes["footer-copyright"] }>
+                <span className={`paragraph Classes["footer-copyright"] `}>
                     626-designs All Rights Reserved
                 </span>
                 <span>socials</span>

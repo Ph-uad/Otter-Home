@@ -1,0 +1,15 @@
+.button{
+    all: unset;
+    display: inline-block;
+    margin-top: 1rem ;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.button-primary{
+    background: var(--color-gray-100);
+    color: var(--color-gray-900);
+
+}

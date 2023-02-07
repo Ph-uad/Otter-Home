@@ -1,0 +1,12 @@
+.container{
+    padding: 4rem;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    place-items: end center;
+}
+
+.details{
+    position: relative;
+}
+

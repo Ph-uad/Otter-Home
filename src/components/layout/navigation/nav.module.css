@@ -1,19 +1,26 @@
 .nav {
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #0000004e;
+  background-color: #e2e2e252;
   -webkit-backdrop-filter: saturate(120%) blur(10px);
           backdrop-filter: saturate(120%) blur(10px);
   cursor: pointer;
-  padding: 0 4rem;
-  justify-content: space-between;
   font-size: 1.6rem;
-  color: var(--color-gray-100);
+  font-weight: bold;
+  color: var(--color-gray-900);
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0 4rem;
 }
 
 .logo {
-  font-size: 4rem;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .list{
@@ -26,12 +33,19 @@
   padding:1rem 1.5rem;
   text-transform: capitalize;
   text-decoration: none;
-  color: var(--color-gray-100);
+  color: inherit;
+  border-radius: 7px;
   transition: all 0.5s ease-in;
 }
 
+
 .list-link:hover a,
-.list-link a:active
+.list-link a:active,
 .list-link .current {
-  text-decoration: underline;
+  background: var(--color-gray-900);
+  color: var(--color-gray-100);
+}
+
+.list-link:hover a{
+  background: var(--color-gray-500);
 }

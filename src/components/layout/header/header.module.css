@@ -18,3 +18,36 @@
     width: 50%;
   }
 }
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 90vh;
+  overflow: hidden;
+}
+
+.card{
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: .2s linear;
+  filter: blur(0px);
+  color: var(--color-gray-100);
+}
+
+.card:first-of-type{
+  background-image:linear-gradient(#1616166d, #0a0b0df9), url(https://images.unsplash.com/photo-1528754704377-60e053a66165?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80);
+}
+.card:nth-of-type(2){
+  background-image:linear-gradient(#1616166d, #0a0b0df9), url(https://images.unsplash.com/photo-1595039357995-905cad2933e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80);
+}
+.card:last-of-type{
+  background-image:linear-gradient(#1616166d, #0a0b0df9), url(../../../Assets/img/hero.jpg);
+}
+
+.card:hover{
+  transform: scale(1.02);
+}
+.grid:hover .card:not(:hover){
+  filter: blur(2px);
+}

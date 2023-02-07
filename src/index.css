@@ -564,9 +564,15 @@ button {
   height: 350%;
 }
 
+.home{
+  background: red;
+}
 
-
-
-
+.apartment{
+  background: blue;  
+}
+.lands{
+  
+}
 
 

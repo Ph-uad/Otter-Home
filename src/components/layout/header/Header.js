@@ -1,13 +1,14 @@
 
-import Classes from './header.module.css';
+import classes from './header.module.css';
 import { Link } from 'react-router-dom';
+import Category from './category/Category';
 
 const Header = (props) => {
 
-    return (
-        <header className={ `flex--column  text-white ${Classes["header"]}` }>
+    return (<>
+        {/* <header className={ `flex--column  text-white ${classes["header"]}` }>
             <div className={ `width--mid container` }>
-                <div className={ Classes["header--text"] } >
+                <div className={ classes["header--text"] } >
                     <p className="paragraph text--white">Welcome to paradise nest</p>
                     <h1 className="heading--jumbo">Otter’s Estate </h1>
                     <p className="paragraph text--white">
@@ -19,7 +20,18 @@ const Header = (props) => {
                     </Link>
                 </div>
             </div>
-        </header>
-    );
+        </header> */}
+        <div className={ classes["grid"] }>
+            <div className={classes.card}>
+                <Category label="home" description="aesthetic pleasing properties, with a wide range of taste for your picking in a safe neighbourhood and easy utilities to ensure an easy modern lifestyle." navigateTo="home" />
+            </div>
+            <div className={classes.card}>
+                <Category label="apartment" description="Pick an apartment from our estates of complex, where we offer great views, luxurious themes, high social neighbourhood blah blah blah" navigateTo="listing" />
+            </div>
+            <div className={classes.card}>
+                <Category label="lands" description="...coming soon" navigateTo="lands" />
+            </div>
+        </div>
+    </>);
 };
 export default Header;
