@@ -23,10 +23,9 @@ const ListItem = ({ result }) => {
                         </svg>
                         <p className="paragraph">{ item.landSize }</p>
                     </div>
-                    <div className={ `flex ${Classes.flex}` }>
-                        <p className="paragraph">Bth: { item.bathroom }</p>
-                        <p className="paragraph">rms: { item.rooms }</p>
-                        <p className="paragraph">grg: { item.garage }</p>
+                    <div className={ `${Classes}` }>
+                        <p className="paragraph">Bathroom: { item.bathroom }</p>
+                        <p className="paragraph">rooms: { item.rooms }</p>
                     </div>
                 </div>
             </li>

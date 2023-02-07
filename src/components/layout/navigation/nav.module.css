@@ -5,7 +5,6 @@
   background-color: #e2e2e252;
   -webkit-backdrop-filter: saturate(120%) blur(10px);
           backdrop-filter: saturate(120%) blur(10px);
-  cursor: pointer;
   font-size: 1.6rem;
   font-weight: bold;
   color: var(--color-gray-900);
@@ -14,7 +13,6 @@
 .container{
   width: 90%;
   margin: 0 auto;
-  justify-content: space-between;
   padding: 0 4rem;
 }
 

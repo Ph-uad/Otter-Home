@@ -70,3 +70,14 @@
     height: 10%;
     display: flex;
 } */
+
+.grid{
+    grid-template-columns: repeat(5, 1fr);
+    height: calc(100vh - 11rem); 
+    overflow: auto;
+}
+
+.grid::-webkit-scrollbar{
+    width: 0;
+    display: none;
+}

@@ -4,7 +4,8 @@
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  height: 95vh;
+  height: 90vh;
+
   color: var(--color-gray-100);
 }
 
@@ -22,7 +23,7 @@
 .grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 90vh;
+  height: calc(100vh - 11rem); 
   overflow: hidden;
 }
 
@@ -49,5 +50,5 @@
   transform: scale(1.02);
 }
 .grid:hover .card:not(:hover){
-  filter: blur(2px);
+  filter: blur(.8px);
 }

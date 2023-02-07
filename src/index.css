@@ -390,6 +390,8 @@ section {
 }
 
 .section {
+  height: calc(100vh - 11rem); 
+  overflow: auto;
   width: 90vw;
   content-visibility: auto;
 }
