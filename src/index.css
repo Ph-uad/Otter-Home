@@ -93,14 +93,8 @@ body::-webkit-scrollbar {
 }
 
 /* util */
-li {
-  all: unset;
-}
-
-.bold {
-  font-weight: bold;
-}
-
+li {all: unset;}
+.bold {font-weight: bold;}
 
 @media (min-width:64em) {
   .search {
@@ -108,7 +102,6 @@ li {
     position: relative;
   }
 }
-
 
 /* Utilities */
 .center {
@@ -302,8 +295,9 @@ h5 {
 }
 
 .section {
+  height: 100%;
   width: 80vw;
-  margin: 5rem auto;
+  margin: 10rem auto;
 }
 
 .page {
@@ -316,14 +310,9 @@ h5 {
   display: grid;
   padding: 4rem;
   gap: 4rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1fr);
 }
 
-@media (min-width:64em) {
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
 
 .box {
   width: 3rem;
@@ -476,19 +465,6 @@ button {
   height: 350%;
 }
 
-.home {
-  background: red;
-}
-
-.apartment {
-  background: blue;
-}
-
-.lands {}
-
-
-
-
 .search__input {
   padding: 1.5rem 2rem;
   background: #fff;
@@ -521,7 +497,10 @@ button {
 }
 
 .fluid--container{
+  position: relative;
   height: calc(100vh - 11rem);
   overflow: auto;
   content-visibility: auto;
+  display: flex;
+  place-items: center;
 }

@@ -4,7 +4,7 @@
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  height: 90vh;
+  height: 100%;
 
   color: var(--color-gray-100);
 }
@@ -23,7 +23,7 @@
 .grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: calc(100vh - 11rem); 
+  height: 100%; 
   overflow: hidden;
 }
 
