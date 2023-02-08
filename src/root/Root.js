@@ -4,13 +4,15 @@ import Nav from "../components/layout/navigation/Nav";
 
 
 function Root() {
-    return ( 
+    return (
         <>
-        <Nav/>
-        <Outlet/>
-        <Footer/>
+            <Nav />
+            <div className="fluid--container">
+                <Outlet />
+            </div>
+            <Footer />
         </>
-     );
+    );
 }
 
 export default Root;
