@@ -13,7 +13,7 @@ const ListModal = ({ data, close }) => {
     }
 
     return (
-        <Modal>
+        <Modal onClick={ close }>
             <span className={ `${Classes.close} close` } onClick={ close }>&times;</span>
 
             <div className={ `flex ${Classes["modal__container"]}` }>
@@ -33,7 +33,7 @@ const ListModal = ({ data, close }) => {
                     </li>
 
                     <section className="">
-                        <h3 className="gallery "> Description </h3>
+                        <h3 className="gallery heading--tertiary"> Description </h3>
                         <p className="paragraph">{ data.description }</p>
                     </section>
 

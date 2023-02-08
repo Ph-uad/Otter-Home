@@ -47,17 +47,10 @@
     }
 }
 
-.btn {
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    margin: 0;
-}
-
 .close {
     position: absolute;
-    right: 1%;
-    top: 1%;
+    right: 3%;
+    top: 0%;
     transition: .3s ease-in-out;
     cursor: pointer;
 }
