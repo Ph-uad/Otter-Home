@@ -1,4 +1,4 @@
-import { Button } from "../../utils/UI/button/Button"
+import { Button } from "../../../UI/button/Button"
 import classes from './category.module.css'
 
 

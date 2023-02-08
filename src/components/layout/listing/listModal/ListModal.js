@@ -1,5 +1,5 @@
 import Classes from '../listing.module.css';
-import Modal from '../../utils/UI/overlayModal/Modal'
+import Modal from '../../../UI/overlayModal/Modal'
 import { Link} from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { propActions } from '../../../data/objectData/objectData';

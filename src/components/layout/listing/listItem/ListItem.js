@@ -1,5 +1,5 @@
-import Classes from './listing.module.css';
-import ListModal from './listModal/ListModal'
+import Classes from '../listing.module.css';
+import ListModal from '../listModal/ListModal'
 import { useState } from 'react';
 
 

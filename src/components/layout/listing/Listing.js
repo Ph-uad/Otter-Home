@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import Classes from './listing.module.css'
-import Search from "../../utility/Search";
-import ListItem from "./ListItem";
+import Search from "../../UI/search/Search";
+import ListItem from "./listItem/ListItem";
 
 const Listing = () => {
     let propertyList = useSelector(state => state.property.list);

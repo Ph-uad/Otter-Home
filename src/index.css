@@ -449,17 +449,7 @@ h5 {
   opacity: 1;
 }
 
-.icon>* {
-  height: 100%;
-  width: 100%;
-}
 
-button {
-  margin-top: 1rem;
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
 
 .picture {
   width: 500px;

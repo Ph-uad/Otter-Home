@@ -1,39 +1,26 @@
-.header {
-  background: linear-gradient(to right, #20221fe1 , #3439326a), url(../../../Assets/img/hero.jpg);
-  background-position: top right;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  height: 100%;
-
+.grid{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  height: 95%; 
+  width: 100vw;
+  overflow: hidden;
   color: var(--color-gray-100);
 }
 
-.header--text {
-  -webkit-animation: animate-pop 0.5s ease-in-out 0.2s forwards;
-          animation: animate-pop 0.5s ease-in-out 0.2s forwards;
-}
-
-@media (min-width:46em) {
-  .header--text{
-    width: 50%;
+@media (min-width:64em) {
+  .grid{
+    grid-template-columns: repeat(3, 1fr);
   }
-}
-
-.grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  height: 100%; 
-  overflow: hidden;
 }
 
 .card{
   background-position: top center;
+  height: 100%; 
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   transition: .2s linear;
   filter: blur(0px);
-  color: var(--color-gray-100);
 }
 
 .card:first-of-type{

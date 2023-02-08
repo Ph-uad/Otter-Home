@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import Classes from './nav.module.css';
-import SVG from '../utils/Svg/Svg';
+import SVG from '../../UI/svg/Svg';
 
 function Nav() {
 

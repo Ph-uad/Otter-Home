@@ -1,5 +1,5 @@
 import React from 'react';
-import Sprite from '../../../../Assets/svg/sprite.svg'
+import Sprite from '../../../Assets/svg/sprite.svg'
 
 const SVG = (props) => {
     return (
