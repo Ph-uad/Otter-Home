@@ -6,7 +6,7 @@ const Header = (props) => {
     return (<>
         <div className={ classes["grid"] }>
             <div className={classes.card}>
-                <Category label="homes" description="aesthetic pleasing properties, with a wide range of taste for your picking in a safe neighbourhood and easy utilities to ensure an easy modern lifestyle." navigateTo="home" />
+                <Category label="homes" description="aesthetic pleasing properties, with a wide range of taste for your picking in a safe neighbourhood and easy utilities to ensure an easy modern lifestyle." navigateTo="listing" />
             </div>
             <div className={classes.card}>
                 <Category label="apartments" description="Pick an apartment from our estates of complex, where we offer great views, luxurious themes, high social neighbourhood blah blah blah" navigateTo="listing" />

@@ -13,7 +13,7 @@ const Search = ({ list, setSearchResult }) => {
     }
 
     return (
-        <form className="search" onSubmit={ submitHandler }>
+        <form className="form" onSubmit={ submitHandler }>
             <input spellCheck="false" className="search__input" type="text" placeholder="Search properties by location..." onChange={ onChangeHandler } />
         </form>
     )

@@ -3,10 +3,8 @@
   grid-template-rows: repeat(3, 1fr);
   height: 100%; 
   width: 100vw;
-  object-fit: cover;
   overflow: hidden;
   color: var(--color-gray-100);
-  background: red;
 }
 
 @media (min-width:64em) {
