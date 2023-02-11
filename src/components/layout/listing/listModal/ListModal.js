@@ -9,6 +9,7 @@ const ListModal = ({ data, close }) => {
     const dispatch = useDispatch();
 
     const detailHandler = (data) =>{
+        console.log(data)
         dispatch(propActions.check(data))
     }
 
@@ -37,7 +38,7 @@ const ListModal = ({ data, close }) => {
                         <p className="paragraph">{ data.description }</p>
                     </section>
 
-                    <Link to="/listing/details">
+                    <Link to={`${data.location}`} relative="path">
                         <button onClick={()=>detailHandler(data)} className={ `btn btn--tertiary ${Classes["btn"]}` }>
                             More Details
                         </button>
