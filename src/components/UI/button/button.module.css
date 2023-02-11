@@ -8,8 +8,8 @@
     font-weight: 700;
     cursor: pointer;
 }
+
 .button-primary{
     background: var(--color-gray-100);
     color: var(--color-gray-900);
-
 }

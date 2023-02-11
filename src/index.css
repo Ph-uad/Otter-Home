@@ -81,24 +81,16 @@
   }
 }
 
-
 html {
   font-size: 62.5%;
   line-height: 1.4;
   scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
-/* util */
-li {all: unset;}
-.bold {font-weight: bold;}
-
-
 
 /* Utilities */
+li {all: unset;}
+
 .center {
   margin: 0 auto;
   text-align: center;
@@ -129,13 +121,6 @@ h5 {
   color: var(--color-gray__dark);
 }
 
-.heading--jumbo {
-  font-size: 5.4rem;
-  text-transform: uppercase;
-  z-index: 1;
-  color: var(--color-white);
-}
-
 .heading--primary {
   font-size: 6rem;
   font-weight: 300;
@@ -145,13 +130,6 @@ h5 {
 .heading--secondary {
   font-size: 4rem;
   font-weight: 200;
-  text-align: center;
-}
-
-@media (min-width:64em) {
-  .heading--secondary {
-    text-align: left;
-  }
 }
 
 .heading--tertiary {
