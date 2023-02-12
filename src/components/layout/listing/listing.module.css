@@ -9,7 +9,7 @@
     background: var(--color-gray-100);
 }
 
-.list{cursor: pointer;}
+.list{cursor: pointer;list-style-type: none;}
 
 .figure {
     aspect-ratio: 1;
@@ -70,7 +70,7 @@
 
 @media (min-width:64em) {
     .grid {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 

@@ -17,15 +17,7 @@ const ListItem = ({ result }) => {
                 </figure>
                 <div className={ `` }>
                     <h3 className="heading--tertiary">{ item.location }</h3>
-                    <div className={ `flex ${Classes.flex}` }>
-                      
                         <p className="paragraph">{ item.landSize }</p>
-                    </div>
-                    <div className={ `${Classes}` }>
-                        <div className=""><p className="paragraph">Bathroom: { item.bathroom }</p></div>
-                        
-                        <p className="paragraph">rooms: { item.rooms }</p>
-                    </div>
                 </div>
             </li>
         )
