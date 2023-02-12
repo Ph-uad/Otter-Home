@@ -2,7 +2,6 @@ import Classes from '../listing.module.css';
 import ListModal from '../listModal/ListModal'
 import { useState } from 'react';
 
-
 const ListItem = ({ result }) => {
 
     const [modal, setModal] = useState();
@@ -17,7 +16,7 @@ const ListItem = ({ result }) => {
                 </figure>
                 <div className={ `` }>
                     <h3 className="heading--tertiary">{ item.location }</h3>
-                        <p className="paragraph">{ item.landSize }</p>
+                    <p className="paragraph">{ item.landSize }</p>
                 </div>
             </li>
         )

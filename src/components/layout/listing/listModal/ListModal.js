@@ -25,23 +25,21 @@ const ListModal = ({ data, close }) => {
 
                 <div className={`flex--right ${Classes["modal__details"]}`}>
 
-                    <li className="list header__details">
-                        <ul className="list--item"><h2 className="heading--secondary">{ data.location }</h2></ul>
-                        <ul className="list--item"><p className="paragraph">{ data.landSize }</p></ul>
-                        <ul className="list--item"><p className="paragraph">Bath: { data.bathroom }</p></ul>
-                        <ul className="list--item"><p className="paragraph">room: { data.rooms }</p></ul>
-                        <ul className="list--item"><p className="paragraph">Garage: { data.garage }</p></ul>
-                    </li>
+                    <ul className="list header__details">
+                        <h2 className="heading--secondary">{ data.location }</h2>
+                        <li className="list--item"><p className="paragraph">{ data.landSize }</p></li>
+                        <li className="list--item"><p className="paragraph">Bath: { data.bathroom }</p></li>
+                        <li className="list--item"><p className="paragraph">room: { data.rooms }</p></li>
+                        <li className="list--item"><p className="paragraph">Garage: { data.garage }</p></li>
+                    </ul>
 
                     <section className="">
                         <h3 className="gallery heading--tertiary"> Description </h3>
                         <p className="paragraph">{ data.description }</p>
                     </section>
 
-                    <Link to={`${data.id}`} relative="path">
-                        <button onClick={()=>detailHandler(data)} className={ `btn btn--tertiary ${Classes["btn"]}` }>
+                    <Link to={`${data.id}`} relative="path" onClick={()=>detailHandler(data)} className={`button button--link ${Classes["btn"]}`}>
                             More Details
-                        </button>
                     </Link>
             
                 </div>
