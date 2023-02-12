@@ -19,13 +19,13 @@ const PropertyDetails = () => {
                     <img className={ `img ${Classes.img}` } src={ data.image } alt="proprty" />
                 </figure>
 
-                <div className={ `flex ${Classes.detail}` }>
-                    <div className="">
+                <div className={ `container flex ${Classes.detail}` }>
+                    <div className={`${Classes.description} list `}>
                         <h3 className="heading--tertiary "> Description </h3>
                         <p className="paragraph">{ data.description }</p>
                     </div>
 
-                    <ul className="flex--right list">
+                    <ul className={`${Classes.facilities} list `}>
                         <h3 className="heading--tertiary "> Property facilities </h3>
                         <li className="list--item"><p className="paragraph">{ data.landSize }</p>  </li>
                         <li className="list--item"><p className="paragraph">Bath: { data.bathroom }</p>  </li>
@@ -34,19 +34,20 @@ const PropertyDetails = () => {
                     </ul>
                 </div>
 
-                <div className="">
-                    <h3 className="heading--tertiary ">Designated Agent </h3>
+                <div className={`${Classes.agent} container `}>
                     <figure className={ `figure ${Classes.figure}` }>
                         <img src={ Agent } alt="" className="img" />
                     </figure>
-
-                    <h4 className="heading--tertiary">Agent: Aubrie Tatcha</h4>
-                    
+                        <h3 className="heading--tertiary ">Designated Agent </h3>
+                        <h4 className="heading--tertiary">Agent: Aubrie Tatcha</h4>
                 </div>
 
-                <figure aria-label="map" className="figure">
-                    <img src={ Map } className="img" alt="map" srcset="" />
-                </figure>
+                <div className="container">
+                    <h2 className="heading--secondary">Map View</h2>
+                    <figure aria-label="map" className="figure">
+                        <img src={ Map } className="img" alt="map" srcset="" />
+                    </figure>
+                </div>
 
             </div>
         </section>

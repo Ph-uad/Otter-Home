@@ -9,7 +9,7 @@
 :root {
   font-family: "Poppins", sans-serif;
   font-size: 62.5%;
-  line-height: 1.6;
+  line-height: 1.7;
   font-weight: 400;
 
 
@@ -89,7 +89,6 @@ html {
 
 
 /* Utilities */
-li {all: unset;}
 
 .center {
   margin: 0 auto;
@@ -97,13 +96,13 @@ li {all: unset;}
 }
 
 .container {
-  padding: 2rem 3rem;
+  padding: 3rem 0;
   position: relative;
 }
 
 @media (min-width:64em) {
   .container {
-    padding: 4rem 6rem;
+    padding: 4rem 0;
     position: relative;
   }
 }
@@ -128,8 +127,8 @@ h5 {
 }
 
 .heading--secondary {
-  font-size: 4rem;
-  font-weight: 200;
+  font-size: 2.4rem;
+  font-weight: 600;
 }
 
 .heading--tertiary {
