@@ -1,17 +1,13 @@
+
 import Nav from "../components/layout/navigation/Nav";
-import {Link } from 'react-router-dom';
+import PageDetails from "../components/layout/pageDetails/PageDetails";
 
-const ErrorPage = () => {
+const ErrorPage = ({title, message}) => {
 
-    console.log("working");
     return (
         <>
             <Nav />
-            <section>
-                  <h2 className="heading--secondary center">Page Not Found</h2>
-                  <Link to='/' className="width--max "><span className="blocks paragraph center">GO Home</span></Link>
-                
-            </section>
+            <PageDetails />
         </>
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Sprite from '../../../Assets/svg/sprite.svg'
 
-const SVG = (props) => {
+const Svg = (props) => {
     return (
         <span className="flex svg-container">
           {props.urlId &&  <svg className='svg'>  <use href={`${Sprite}${props.urlId}`}></use> </svg> }
@@ -10,4 +10,4 @@ const SVG = (props) => {
     );
 }
 
-export default SVG;
+export default Svg;

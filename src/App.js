@@ -4,21 +4,23 @@ import HomePage from './pages/HomePage';
 import ListingPage from './pages/ListingPage';
 import About from './pages/AboutPage';
 import ErrorPage from './pages/ErrorPage';
-import PropertyDetails from './components/layout/propertyDetails/PropertyDetails';
+import PropertyPage from './pages/PropertyPage';
 
 const router = createBrowserRouter([
+
   {
-    path: '/', 
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    children: [
-      { path: '/', element: <HomePage /> },
-      { path: '/listing', element: <ListingPage /> },
-      { path: '/listing/details', element: <PropertyDetails /> },
-      { path: '/about', element: <About /> },
+    path: '/',element: <Root />,errorElement: <ErrorPage />, children: [
+      { index: true, element: <HomePage /> },
+      {path: 'listing',element: <ListingPage />,}, //add loader
+      { path: 'listing/:homeID', element: <PropertyPage />},
+      { path: 'about', element: <About /> },
     ]
   }
 ])
 
-const App = () =>  <RouterProvider router={ router } />
+const App = () => {
+  return (
+    <RouterProvider router={ router } />
+  )
+}
 export default App;

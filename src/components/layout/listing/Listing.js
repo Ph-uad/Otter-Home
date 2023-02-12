@@ -3,12 +3,12 @@ import { useSelector } from "react-redux";
 import Classes from './listing.module.css'
 import Search from "../../UI/search/Search";
 import ListItem from "./listItem/ListItem";
+import PageDetails from "../pageDetails/PageDetails";
 
 const Listing = () => {
     let propertyList = useSelector(state => state.property.list);
     const [searchResult, setSearchResult] = useState(propertyList)
     let show = searchResult.length ? true : false;
-
 
     return (
         <>
@@ -18,9 +18,8 @@ const Listing = () => {
             </div>
             <div className={ `grid ${Classes.grid}` }>
                 { show && <ListItem result={ searchResult } /> }
-                { !show && <p className="paragraph bold">No matches found</p> }
+                { !show && <PageDetails title="Item not found" message="Search by location or description only"/> }
             </div>
-
         </>
     )
 }

@@ -1,25 +1,48 @@
-.header{
-    height: 80vh;
-    width: 90vw;
-    margin: 0% auto;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
+.header{height: 40rem;}
 
 .figure{
     margin-top: 4rem;
     width: 30rem;
     aspect-ratio: 1;
     clip-path: circle(40% at 40% 40%);
+    outline-offset: 4px;
+    position: relative;
 }
 
-.img:hover{
-    transform:scale(1);
+
+.img--scale:hover {
+  transform: scale(1.5);
 }
 
 .detail{
-    width: 80vw;
     margin: 0 auto;
+}
+
+.facilities{
+    flex: 0 1 25%;
+    line-height: 2;
+    padding: 2rem;
+    border-radius: 5px;
+    border: 1px solid var(--color-gray-400);
+}
+
+.description{
+    flex: 0 1 50%;
+}
+
+.arrow{
+    font-size: 3rem;
+    color: var(--color-gray-800);
+    background: var(--color-gray-200);
+    margin-top: 5rem;
+    padding:.2rem 3rem;
+    width: fit-content;
+    border-radius: 5px;
+
+    transition: .4s linear;
+}
+
+.arrow:hover{
+    background: var(--color-gray-800);
+    color: var(--color-gray-200);
 }
