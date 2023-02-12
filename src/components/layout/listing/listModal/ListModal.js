@@ -38,7 +38,7 @@ const ListModal = ({ data, close }) => {
                         <p className="paragraph">{ data.description }</p>
                     </section>
 
-                    <Link to={`${data.location}`} relative="path">
+                    <Link to={`${data.id}`} relative="path">
                         <button onClick={()=>detailHandler(data)} className={ `btn btn--tertiary ${Classes["btn"]}` }>
                             More Details
                         </button>

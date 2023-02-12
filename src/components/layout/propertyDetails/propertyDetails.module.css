@@ -1,8 +1,5 @@
 .header{
-    margin: 0% auto;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 40rem;
 }
 
 .figure{
@@ -17,6 +14,5 @@
 }
 
 .detail{
-    width: 80vw;
     margin: 0 auto;
 }

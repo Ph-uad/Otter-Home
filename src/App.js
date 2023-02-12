@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage';
 import ListingPage from './pages/ListingPage';
 import About from './pages/AboutPage';
 import ErrorPage from './pages/ErrorPage';
-import PropertyPage,{loader as DetailLoader} from './pages/PropertyPage';
+import PropertyPage from './pages/PropertyPage';
 
 const router = createBrowserRouter([
 
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     path: '/',element: <Root />,errorElement: <ErrorPage />, children: [
       { index: true, element: <HomePage /> },
       {path: 'listing',element: <ListingPage />,}, //add loader
-      { path: ':homeID', element: <PropertyPage />, loader: DetailLoader  ,errorElement: <PropertyPage/>},
+      { path: 'listing/:homeID', element: <PropertyPage />},
       { path: 'about', element: <About /> },
     ]
   }

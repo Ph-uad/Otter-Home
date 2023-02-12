@@ -4,18 +4,17 @@ import PropertyDetails from '../components/layout/propertyDetails/PropertyDetail
 
 const PropertyPage = () => {
 
-    const params =useParams()
+    const params = useParams()
     console.log(params)
 
   return (
     <PropertyDetails />
   )
 }
-
 export default PropertyPage
 
-export function loader({params}){
-    const data = params;
-    console.log(data);
-    return data;
-}
+// export function loader({params}){
+//     const data = params;
+//     console.log(data);
+//     return data;
+// }
