@@ -11,9 +11,14 @@
 }
 
 .container{
-  width: 90%;
-  margin: 0 auto;
-  padding: 0 4rem;
+  margin: 0 auto ;
+  padding: 1rem 4rem;
+}
+
+@media (min-width:64em) {
+  .container{
+    width: 90%;
+  }
 }
 
 .logo {

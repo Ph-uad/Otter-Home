@@ -448,6 +448,8 @@ h5 {
 }
 
 .search__input {
+  position: sticky;
+  top: 0;
   padding: 1.5rem 2rem;
   background: #fff;
   color: #111;
@@ -455,8 +457,12 @@ h5 {
   border: none;
   transition: .4s linear;
   width: 90%;
-  translate: 10% 0;
+  translate: 0 0;
   transform-origin: left;
+}
+
+@media (min-width:64em) {
+  .search__input{translate: 10% 0;}
 }
 
 

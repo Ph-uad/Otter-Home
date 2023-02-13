@@ -2,9 +2,15 @@
     font-size: 1.6rem;
     font-weight: bolder;
     padding:1rem 5rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+
     width: 100vw;
     background: var(--color-gray-100);
+}
+
+@media (min-width:64em) {
+    .footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
 }
