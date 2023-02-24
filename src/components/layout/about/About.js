@@ -5,7 +5,7 @@ const About = () => {
     return (
         <section className="section__container section">
             <h2 className="heading--secondary">About US</h2>
-            <div className="flex">
+            <div className="">
                 <figure className={ `${Classes.figure} figure` }>
                     <img src={ Image } alt="" className={ `img  ` } />
                 </figure>

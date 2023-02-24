@@ -1,11 +1,6 @@
 
 .figure{
-    flex: 1 0 90%;
+    flex: 1 0 50%;
     margin: 5%;
 }
 
-@media (min-width: 64em) {
-    .figure{
-        flex: 0 0 40%;
-    }
-}

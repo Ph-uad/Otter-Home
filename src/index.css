@@ -8,7 +8,7 @@
 
 :root {
   font-family: "Poppins", sans-serif;
-  font-size: 62.5%;
+  font-size: clamp(30%,62.5%, 70%);
   line-height: 1.7;
   font-weight: 400;
 
@@ -44,49 +44,6 @@
   --color-primary-800: #fab833;
   --color-primary-900: #f6ad1b;
 }
-
-@media (max-width: 77.75em) {
-  :root {
-    font-size: 56.5%;
-  }
-}
-
-@media (max-width: 59em) {
-  :root {
-    font-size: 51%;
-  }
-}
-
-@media (max-width: 58em) {
-  :root {
-    font-size: 50%;
-  }
-}
-
-@media (max-width: 56.25em) {
-  :root {
-    font-size: 48%;
-  }
-}
-
-@media (max-width: 31.25em) {
-  :root {
-    font-size: 40.75%;
-  }
-}
-
-@media (max-width: 25em) {
-  :root {
-    font-size: 30%;
-  }
-}
-
-html {
-  font-size: 62.5%;
-  line-height: 1.4;
-  scroll-behavior: smooth;
-}
-
 
 /* Utilities */
 
