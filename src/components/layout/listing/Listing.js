@@ -8,7 +8,7 @@ import PageDetails from "../pageDetails/PageDetails";
 const Listing = () => {
     let propertyList = useSelector(state => state.property.list);
     const [searchResult, setSearchResult] = useState(propertyList)
-    let show = searchResult.length ? true : false;
+
 
     return (
         <>
